@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartpage</title>
+    <link rel="icon" href="https://data1.ibtimes.co.in/cache-img-0-450/en/full/657536/1539438235_zomato.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="cart.css"/>
+    
+</head>
+<body>
+    <div id="navbar">
+
+      <h2 id="head"> Cart page </h2> 
+      <a href="restorent1.html"><i class="fa fa-arrow-left" aria-hidden="true" id="left-arrow"></i></a>
+      <h3 id="length"></h3>
+
+    </div>
+    <div id="cart-container">
+        <div id="display">
+           
+        
+        </div>
+       
+   </div>
+   <p id="rupees"> </p>
+   
+   <div id="input-conatiner">
+   <div id="input-card">
+    
+        <lable>Address :</lable>
+        <input type="text" placeholder="address" id="address" name="address"  /><br><br>
+        <lable id="phone">Phone :</lable>
+        <input type="number" placeholder="number" id="number" name="number" /><br><br>
+        <button id="submit" onclick="add()">ADD</button>
+
+    
+   </div>
+   <div id="card-info">
+      <p id="address1">Address</p>
+      <div id="info1">
+       
+          <p id="ad"></p>
+          <p id="num"></p>
+        
+
+      </div>
+      <input type="submit" value="submit" id="submit1" onclick="blure()"/>
+   </div>
+</div>
+
+   <!--payment page-->
+   <div id="blur">
+    <div id="blur1">
+        <p id="address2">Address :</p>
+        <p id="close" onclick="multi()">X</p>
+
+        <div id="address-info">
+            <p id="ad1"></p>
+            <p id="num1"></p>
+        </div>
+
+        <div id="payment">
+            <p id="payment-info">Payments :</p>
+            <input type="radio" id="cash" name="payment"/>
+            <label for="cash" id="cash1">Cash on Delivery</label><br><br>
+            <input type="radio" id="online" name="payment"/>
+            <label for="online" id="online1">Online payment</label>
+        </div>
+        <input type="submit" value=" Place Order" id="placed" onclick="success()"/>
+        
+    </div>
+    
+
+   </div>
+   <!--payment page end-->
+  <div id="success-blur">
+    <div id="success-page">
+         <p id="success-close" onclick="successClose()">X</p>
+        <h3 id="success-content">Order Placed</h3>
+       <div id="success-check"> <i class="fa fa-check" aria-hidden="true"></i></div>
+
+    </div>
+ </div>
+
+
+
+
+
+
+
+
+
+
+    <script>
+        var card=JSON.parse(localStorage.getItem("cards"));
+         console.log(card)
+        var length=document.getElementById("length").innerText="Items"+" "+card.length 
+        var desc=document.querySelector('#display');
+        var sum=0;
+        var id=0;
+    for(var i=0;i<card.length;i++){
+    var main=document.createElement("div")
+    main.setAttribute("id","cart")
+    var divTag=document.createElement("div")
+    divTag.setAttribute("id",id+i)
+    var imgTag=document.createElement("img")
+    imgTag.setAttribute("src",card[i].img)
+    imgTag.setAttribute("id","img")
+    var h3Tag=document.createElement("h3")
+    h3Tag.setAttribute("id","restorent")
+    h3Tag.innerText=card[i].restorent
+    var h4Tag=document.createElement("h4")
+    h4Tag.setAttribute("id","dishname")
+    h4Tag.innerText=card[i].name
+    var pTag=document.createElement("p")
+    pTag.setAttribute("id","price")
+    pTag.innerText=card[i].price +" "+"rs"+" "+"/-"
+    var button=document.createElement("button")
+    button.setAttribute("id","remove")
+    button.innerText="X"
+   
+   
+  
+     sum=parseInt(card[i].price)+sum
+     var total=document.getElementById("rupees").innerHTML=sum +" "+"Grand total";
+    
+    divTag.append(imgTag)
+    divTag.append(h3Tag)
+    divTag.append(h4Tag)
+    divTag.append(pTag)
+    divTag.append(button)
+    main.append(divTag)
+    desc.append(main)
+
+   
+}
+ 
+
+
+var remove=document.querySelectorAll("#remove");
+remove.forEach(btn=>{
+btn.addEventListener("click",addRemove)
+})
+function addRemove(e){
+   var cartid=e.target.parentElement.id;
+   console.log(cartid)
+   var carts=card.map(product=>product.id)
+   var index=carts.findIndex(id=>
+   id===parseInt(cartid)
+   )
+   index=index+1
+   if(index > -1){
+   card.splice(index,1)
+   localStorage.setItem("cards",JSON.stringify(card))
+   }
+
+} 
+
+
+function add(){
+    var address=document.getElementById("address").value
+    var number=document.getElementById("number").value
+    var ad=document.getElementById("ad").innerHTML=address
+    var num=document.getElementById("num").innerHTML=number
+    var ad1=document.getElementById("ad1").innerHTML=address
+    var num1=document.getElementById("num1").innerHTML=number
+
+}
+function blure(){
+    var delver=document.getElementById("blur");
+    delver.style.display="block"
+
+}
+function multi(){
+    var delver=document.getElementById("blur");
+    delver.style.display="none"
+
+    
+}
+function success(){
+    var success=document.getElementById("success-blur");
+    var delver=document.getElementById("blur");
+    delver.style.display="none"
+    success.style.display="block"
+}
+function successClose(){
+    var success=document.getElementById("success-blur");
+    var delver=document.getElementById("blur");
+    delver.style.display="none"
+    success.style.display="none"
+
+}
+
+
+
+    </script>
+    
+
+</body>
+</html>

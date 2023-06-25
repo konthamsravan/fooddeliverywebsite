@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #img{
+            height: 200px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+      
+    
+    
+        <div id="display">
+           
+
+           
+    
+        </div>
+        <p id="rupees"> </p>
+        
+
+
+        <script>
+        
+        const image=JSON.parse(localStorage.getItem("images"));
+        console.log(image.length)
+        
+        
+        var desc=document.querySelector('#display');
+        var sum=0;
+        var id=0
+        for(var i=0;i<image.length;i++){
+            var divTag=document.createElement("div")
+            divTag.setAttribute("id",id+i)
+            var imgTag=document.createElement("img")
+            imgTag.setAttribute("src",image[i].img)
+            imgTag.setAttribute("id","img")
+            var h3Tag=document.createElement("h3")
+            h3Tag.innerText=image[i].cont
+            var pTag=document.createElement("p")
+            pTag.innerText=image[i].rs
+            var button=document.createElement("button")
+            button.setAttribute("id","remove")
+            button.innerText="remove"
+           
+           
+          
+             sum=parseInt(image[i].rs)+sum
+             var total=document.getElementById("rupees").innerHTML=sum+" "+"total";
+            
+            divTag.append(imgTag)
+            divTag.append(h3Tag)
+            divTag.append(pTag)
+            divTag.append(button)
+            desc.append(divTag)
+
+           
+        }
+         
+
+
+      var remove=document.querySelectorAll("#remove");
+      remove.forEach(btn=>{
+        btn.addEventListener("click",addRemove)
+      })
+      function addRemove(e){
+        var cartid=e.target.parentElement.id;
+        console.log(cartid)
+        var carts=image.map(product=>product.id)
+        var index=carts.findIndex(id=>
+        id===parseInt(cartid)
+        )
+        index=index+1
+        if(index > -1){
+          image.splice(index,1)
+          localStorage.setItem("images",JSON.stringify(image))
+        }
+        
+      }
+       
+       
+       
+        </script>
+    
+    
+</body>
+</html>

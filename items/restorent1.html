@@ -1,0 +1,1654 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Zomato</title>
+	<!-- icon -->
+	<link rel="icon" href="https://data1.ibtimes.co.in/cache-img-0-450/en/full/657536/1539438235_zomato.png">
+	<!--font awesome-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+		integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<!--css file-->
+	<link rel="stylesheet" href="restorent1.css">
+</head>
+
+<body onresize="click()">
+	<div id="main-block">
+		<!-- header section starts -->
+		<header>
+			<div class="container">
+				<div id="header">
+					<a href="/index.html">
+					<img src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png"
+						tabindex="0" class="sc-yvzia9-6 sc-yvzia9-7 fvCyAU" height=30px
+						style="margin-top: 20px;" /><!--logo--></a>
+					<div class="search-container">
+						<div class="detect-location">
+							<!--font awesome icons-->
+							<i class="fa-solid fa-location-dot location-map"></i>
+							<input type="text" placeholder="Hyderabad">
+							<i class="fa-sharp fa-solid fa-caret-down caret-down" id="detectdown"
+								onclick="detectd()"></i>
+							<!-- <i class="fa-sharp fa-solid fa-caret-up" id="detectup" onclick="detectu()"></i> -->
+						</div>
+						<div class="line">|</div>
+						<div class="search-item">
+							<i class="fa-solid fa-magnifying-glass"></i>
+							<input type="text" placeholder="Search for restaurant, cuisine or a dish"
+								onkeypress="search()" id="search-content">
+						</div>
+					</div>
+					<p id="login" onclick="log()"><a href="#" id="anchor1">Log in</a></p>
+					<p id="signup" onclick="sing()"><a href="#" id="anchor1">Sign up</a></p>
+				</div>
+			</div>
+			
+			<div id="mini-nav" onclick="toggle()">
+				<h4 style="font-size:30px;margin-left: 10px;cursor: pointer; color: rgb(0, 0, 0);">&#x2630;
+				</h4>
+			</div>
+		</header>
+		<div class="logo_nav">
+			<div class="logo_img">
+				<img src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png" tabindex="0"
+					class="sc-yvzia9-6 sc-yvzia9-7 fvCyAU" height=30px style="margin-top: 20px;" /><!--logo-->
+			</div>
+		</div>
+		<!--header section ends-->
+
+		<!--restaurant line starts-->
+		<div class="rest_para">
+			<span class="p">Home</span>
+			<span class="s">/</span>
+			<span class="p">India</span>
+			<span class="s">/</span>
+			<span class="p">Hyderabad</span>
+			<span class="s">/</span>
+			<span class="p">Hyderabad City</span>
+			<span class="s">/</span>
+			<span class="p">Kukatpally</span>
+			<span class="s">/</span>
+			<span class="p">Kritunga Restaurant</span>
+			<span class="s">/</span>
+			<span class="p">Order Online</span>
+		</div>
+		<!--restaurant line ends-->
+
+		<!--section-1 photos begins-->
+		<div class="section-1">
+			<div class="photo1">
+				<img src="https://b.zmtcdn.com/data/reviews_photos/67b/caefe877c48c3676e06355d5858c867b_1528097248.jpg?fit=around|771.75:416.25&crop=771.75:416.25;*,*"
+					alt="">
+			</div>
+			<div class="photo2">
+				<img src="https://b.zmtcdn.com/data/pictures/chains/8/90148/5fdd6618d94b6db37dcd17fed3d69db3.jpg?fit=around|300:273&crop=300:273;*,*"
+					alt="">
+				<img src="https://b.zmtcdn.com/data/pictures/chains/8/90148/18a9857861467119d0cfc9d0884ec044.jpg?fit=around|300:273&crop=300:273;*,*"
+					alt="">
+			</div>
+			<div class="photo3">
+				<img class="photo4"
+					src="https://b.zmtcdn.com/data/pictures/chains/8/90148/e00b48c651bee99a1c43b1a5b7ecdfca.jpg?fit=around|300:273&crop=300:273;*,*"
+					alt="">
+				<div class="view">
+					<p><a href="#">View Gallery</a></p>
+				</div>
+			</div>
+		</div>
+		<!--section-1 photos ends-->
+
+		<!--section-2 description starts-->
+		<div class="section-2" id="section-2">
+			<div class="section-2_top">
+				<h1>Kritunga Restaurant</h1>
+				<div class="section-2_ratings">
+					<div class="dining_review">
+						<div class="rating_star">
+							<div>4.0</div>
+							<div><i class="fa-solid fa-star"></i></div>
+						</div>
+						<div class="rating_desc">
+							<h3>924</h3>
+							<p>Dining Reviews</p>
+							<p>---------------------</p>
+						</div>
+					</div>
+					<div class="dining_review">
+						<div class="rating_star">
+							<div>3.8</div>
+							<div><i class="fa-solid fa-star"></i></div>
+						</div>
+						<div class="rating_desc">
+							<h3>56.1K</h3>
+							<p>Delivery Reviews</p>
+							<p>---------------------</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="cuisines">
+				<span>South Indian, </span>
+				<span>North Indian, </span>
+				<span>Biryani, </span>
+				<span>Chinese, </span>
+				<span>Kebab, </span>
+				<span>Street Food, </span>
+				<span>Desserts, </span>
+				<span>Beverages</span>
+			</div>
+			<div class="address">
+				<span>PNR Empire, Kukatpally, Hyderabad</span>
+			</div>
+			<div class="open_timings" id="open_timings">
+				<span style="color: rgb(244,162,102);">Open now</span>
+				<span> - 11:30am - 11pm (Today)
+					<i class="fa-solid fa-circle-info" onmouseleave="time()" onmouseover="icon()"></i>
+				</span>
+			</div>
+			<div id="open">
+				<h3>Opening Hours</h3>
+				<p>Mon - Sun: 11:30am - 11pm</p>
+			</div>
+			<div class="desc_buttons">
+				<div class="desc_button1">
+					<svg xmlns="http://www.w3.org/2000/svg" fill="#EF4F5F" width="16" height="16" viewBox="0 0 20 20"
+						aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kMNrPk">
+						<title>direction-line</title>
+						<path
+							d="M19.2 8.44l-7.22-7.22c-0.52-0.48-1.2-0.8-1.98-0.8s-1.46 0.32-1.98 0.8v0l-7.2 7.22c-0.52 0.5-0.82 1.2-0.82 1.98s0.3 1.46 0.82 1.98l7.2 7.2c0.5 0.52 1.2 0.82 1.98 0.82s1.48-0.3 1.98-0.82l7.22-7.2c0.5-0.52 0.8-1.22 0.8-1.98s-0.3-1.48-0.8-1.98v0zM18.16 11.38l-7.2 7.2c-0.24 0.24-0.58 0.38-0.94 0.38s-0.72-0.14-0.96-0.38v0l-7.22-7.2c-0.24-0.24-0.4-0.58-0.4-0.96s0.16-0.7 0.4-0.94v0l7.2-7.22c0.24-0.24 0.58-0.4 0.96-0.4s0.7 0.16 0.94 0.4l7.2 7.2c0.24 0.24 0.4 0.58 0.4 0.94s-0.16 0.72-0.4 0.96v0zM12.2 6.96c-0.040-0.040-0.080-0.060-0.12-0.060-0.1 0-0.18 0.080-0.18 0.18 0 0 0 0 0 0v0 1.66h-3.56c-1.18 0-2.14 0.96-2.14 2.16v0 2.38c0 0.26 0.2 0.46 0.46 0.46v0h0.48c0.26 0 0.48-0.2 0.48-0.46v0-2.38c0-0.4 0.32-0.72 0.72-0.72h3.56v1.66c0 0 0 0 0 0 0 0.1 0.080 0.18 0.18 0.18 0.040 0 0.080-0.020 0.12-0.060v0l2.34-2.32c0.040-0.040 0.080-0.1 0.080-0.18s-0.040-0.12-0.080-0.16v0z">
+						</path>
+					</svg>
+					<span>Direction</span>
+				</div>
+				<div class="desc_button2">
+					<i class="fa-solid fa-bookmark"></i>
+					<span>Bookmark</span>
+				</div>
+				<div class="desc_button3">
+					<i class="fa-solid fa-share"></i>
+					<span>Share</span>
+				</div>
+			</div>
+			<!--section-3 nav-bar starts-->
+			<div class="section-3" id="section-3">
+				<div class="overview total_nav" onclick="overview()">
+					<a href="#section-3">Overview</a>
+				</div>
+				<div class="order_online total_nav" onclick="order_online()">
+					<a href="#section-3">Order Online</a>
+				</div>
+				<div class="reviews total_nav" onclick="reviews()">
+					<a href="#section-3">Reviews</a>
+				</div>
+				<div class="photos total_nav" onclick="photos()">
+					<a href="#section-3">Photos</a>
+				</div>
+				<div class="menu total_nav" onclick="menu()">
+					<a href="#section-3">Menu</a>
+				</div>
+			</div>
+			<!--section-3 nav-bar ends-->
+		</div>
+		<!--section-2 description starts-->
+
+        <!--overview starts-->
+		<div id="overview">
+				<!--section-4 starts-->
+		<div class="section-4">
+			<div class="left_scroll1">
+				<h2>About this place</h2>
+				<div class="safety">
+					<div class="hand_wash">
+						<img src="https://b.zmtcdn.com/data/o2_assets/fa7443fb81df3ff2c54186672599c3db1585754076.png"
+							alt="">
+						<div class="hand_desc">
+							<p>RESTAURANT SAFETY MEASURE</p>
+							<h4>Rider Hand Wash</h4>
+						</div>
+					</div>
+					<div class="hand_wash">
+						<img src="https://b.zmtcdn.com/data/o2_assets/8ecc61badb80ea685f0afc71a4d721671585754288.png"
+							alt="">
+						<div class="hand_desc">
+							<p>RESTAURANT SAFETY MEASURE</p>
+							<h4>Daily Temp. Checks</h4>
+						</div>
+					</div>
+				</div>
+				<div class="restaurant_menu">
+					<div class="rest_menu">
+						<h3>Menu</h3>
+						<div class="see_menu">
+							<a href="#">
+								See all menus
+								<i class="fa-solid fa-caret-right"></i>
+							</a>
+						</div>
+					</div>
+					<div class="menu_pic">
+						<a href="https://b.zmtcdn.com/data/menus/148/90148/c43779f93b846f5bbdf25678cfd46d01.jpg"
+							target="_blank">
+							<img src="https://b.zmtcdn.com/data/menus/148/90148/0bcd1489d157a2fa4923f9f77d41a45b.jpg"
+								alt="">
+						</a>
+						<a href="https://b.zmtcdn.com/data/menus/148/90148/c483aa32959817b7a1d81a772b4a98c7.jpg"
+							target="_blank">
+							<img src="https://b.zmtcdn.com/data/menus/148/90148/c483aa32959817b7a1d81a772b4a98c7.jpg"
+								alt="">
+						</a>
+						<a href="https://b.zmtcdn.com/data/menus/148/90148/c43779f93b846f5bbdf25678cfd46d01.jpg"
+							target="_blank">
+							<img src="https://b.zmtcdn.com/data/menus/148/90148/c43779f93b846f5bbdf25678cfd46d01.jpg"
+								alt="">
+						</a>
+					</div>
+					<div class="food_menu">
+						<h4>Food Menu</h4>
+						<p>3 pages</p>
+					</div>
+				</div>
+				<div class="cusin">
+					<div class="cusin_heading">
+						<h3>Cuisines</h3>
+					</div>
+					<span>South Indian</span>
+					<span>North Indian</span>
+					<span>Biryani</span>
+					<span>Chinese</span>
+					<span>Kebab</span>
+					<span>Street Food</span>
+					<span>Desserts</span>
+					<span>Beverages</span>
+				</div>
+				<div class="popular_dishes">
+					<h3>Popular Dishes</h3>
+					<p>Naatukodi Pulusu, Spicy Food, Plain Rice, Mutton Biryani</p>
+				</div>
+				<div class="popular_dishes">
+					<h3>People Say This Place Is Known For</h3>
+					<p>Family Place, Comfortable Seating Area, Quick Delivery, Fast Delivery, Good Delivery, Spicy</p>
+				</div>
+				<div class="average_cost">
+					<h3>Average Cost</h3>
+					<p class="avg1">₹850 for two people (approx.)</p>
+					<p class="avg2">Exclusive of applicable taxes and charges, if any</p>
+					<p class="avg3" onmouseover="avg1()" onmouseleave="avg2()">
+						<span>How do we calculate cost for two?</span>
+					</p>
+					<p class="avg1">Cash, Cards and Meal Coupons accepted</p>
+					<p class="avg1">Digital payments accepted</p>
+				</div>
+				<div id="average">
+					<p>The cost for two is computed as follows: Average of 2 appetizers + 2 mains + 2 beverages + 1 dessert. The actual cost you incur at a restaurant might change depending on your appetite, or with changes in restaurant menu prices.</p>
+				</div>
+				<div class="moreinfo">
+					<h3>More Info</h3>
+					<div class="info_items">
+						<div class="info">
+							<i class="fa-regular fa-circle-check"></i>
+							<span>Home Delivery</span>
+						</div>
+						<div class="info">
+							<i class="fa-regular fa-circle-check"></i>
+							<span>Takeaway Available</span>
+						</div>
+						<div class="info">
+							<i class="fa-regular fa-circle-check"></i>
+							<span>Valet Parking Available</span>
+						</div>
+						<div class="info">
+							<i class="fa-regular fa-circle-check"></i>
+							<span>Indoor Seating</span>
+						</div>
+						<div class="info">
+							<i class="fa-regular fa-circle-check"></i>
+							<span>Desserts and Bakes</span>
+						</div>
+						<div class="info">
+							<i class="fa-regular fa-circle-check"></i>
+							<span>Family Friendly</span>
+						</div>
+					</div>
+				</div>
+				<div class="our_sponsors">
+					<h3 class="sponh3">OUR SPONSORS</h3>
+					<div class="sponsors">
+						<div class="sponsor1">
+							<img src="https://b.zmtcdn.com/data/pictures/chains/1/18808521/11fa8f30e1ec4b2caea6a4c9c91f4ed7_featured_v2.jpg" alt="">
+							<h3>Krishnapatnam</h3>
+							<span class="krish">
+								<span>3.9</span>
+							    <span><i class="fa-solid fa-star"></i></span>
+							</span>
+							<span class="rate_tag">DINING</span>
+							<span class="rate_line">|</span>
+							<span class="krish">
+								<span>3.6</span>
+							    <span><i class="fa-solid fa-star"></i></span>
+							</span>
+							<span class="rate_tag">DELIVERY</span>
+							<div class="spons_desc">
+								Andhra, South Indian, Mughlai, Bar Food, Beverages
+							</div>
+						</div>
+						<div class="sponsor1">
+							<img src="https://b.zmtcdn.com/data/pictures/4/19274764/2bd4a45c47c06d3d156ae756aa2ff255_featured_v2.jpg" alt="">
+							<h3>Platform 65</h3>
+							<span class="krish">
+								<span>3.9</span>
+							    <span><i class="fa-solid fa-star"></i></span>
+							</span>
+							<span class="rate_tag">DINING</span>
+							<span class="rate_line">|</span>
+							<span class="krish">
+								<span>3.6</span>
+							    <span><i class="fa-solid fa-star"></i></span>
+							</span>
+							<span class="rate_tag">DELIVERY</span>
+							<div class="spons_desc">
+								Fast Food, Chinese, North Indian, South Indian, Biryani, Desserts, Shakes, Beverages
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="are_you">
+					<h2>Are you a food blogger?</h2>
+					<a href="#">
+						<span>Add a Zomato spoonback to your blog.</span>
+						<i class="fa-solid fa-caret-right"></i>
+					</a>
+				</div>
+				<div class="rate_exp">
+					<h3>Rate your experience for</h3>
+					<div class="radio_btn">
+						<div>
+							<input type="radio" id="Dining">
+							<label for="Dining">Dining</label>
+						</div>
+						<div>
+							<input type="radio" id="Delivery">
+							<label for="Delivery">Delivery</label>
+						</div>
+					</div>
+					<div class="star5">
+						<span class="star">
+							<span>1</span>
+							<span><i class="fa-solid fa-star"></i></span>
+						</span>
+						<span class="star">
+							<span>2</span>
+							<span><i class="fa-solid fa-star"></i></span>
+						</span>
+						<span class="star">
+							<span>3</span>
+							<span><i class="fa-solid fa-star"></i></span>
+						</span>
+						<span class="star">
+							<span>4</span>
+							<span><i class="fa-solid fa-star"></i></span>
+						</span>
+						<span class="star">
+							<span>5</span>
+							<span><i class="fa-solid fa-star"></i></span>
+						</span>
+					</div>
+					<div class="write">
+						<a href="#">
+							Write a Review
+						</a>
+					</div>
+				</div>
+				<div class="sanjay">
+					<div class="sanjay_pro">
+						<div class="sanjay_pic">
+							<img src="https://b.zmtcdn.com/web/assets/2267aec184e096c98c46a1565a5563661664945464.png?fit=around%7C100%3A100&crop=100%3A100%3B%2A%2C%2A" alt="">
+							<div class="sanjay_name">
+								<b>Sanjay Anand</b>
+								<p>30 reviews . 0 Followers</p>
+							</div>
+						</div>
+						<div class="follow">
+							<a href="#">Follow</a>
+						</div>
+					</div>
+					<div class="sanjay_rate">
+						<span class="krish1">
+							<span>5</span>
+							<span><i class="fa-solid fa-star"></i></span>
+						</span>
+						<span style="margin: 0 10px;">DELIVERY</span>
+						<span style="color: rgb(155,153,153);">4 hours ago</span>
+					</div>
+					<div class="sanjay_desc">
+						<p style="color: rgb(111, 110, 110);">Has been ordering food from last few times regularly. The food we tried were so good and always given with good amount of quantity.</p>
+						<p style="color: rgb(111,110,110);">👉Want Genuine Reviews Contact My WhatsApp No. ;- 7806032232</p>
+						<p class="san_p">0 Votes for helpful, 0 Comments</p>
+					</div>
+					<div class="sanjay_help">
+						<div class="sanjay_help_item">
+							<i class="fa-solid fa-thumbs-up"></i>
+							<span>Helpful</span>
+						</div>
+						<div class="sanjay_help_item">
+							<i class="fa-solid fa-comment"></i>
+							<span>Comment</span>
+						</div>
+						<div class="sanjay_help_item">
+							<i class="fa-solid fa-share"></i>
+							<span>Share</span>
+						</div>
+					</div>
+				</div>
+				<div class="sanjay">
+					<div class="sanjay_pro">
+						<div class="vamsi_pic">
+							<img src="https://b.zmtcdn.com/data/user_profile_pictures/0d9/bf36de6ebdb56383157cf260a20520d9.jpg?fit=around%7C100%3A100&crop=100%3A100%3B%2A%2C%2A" alt="">
+							<div class="sanjay_name">
+								<b>Vamsi Krishna</b>
+								<p>1 reviews . 0 Followers</p>
+							</div>
+						</div>
+						<div class="follow">
+							<a href="#">Follow</a>
+						</div>
+					</div>
+					<div class="sanjay_rate">
+						<span class="krish2">
+							<span>1</span>
+							<span><i class="fa-solid fa-star"></i></span>
+						</span>
+						<span style="margin: 0 10px;">DELIVERY</span>
+						<span style="color: rgb(155,153,153);">22 hours ago</span>
+					</div>
+					<div class="sanjay_desc">
+						<p class="san_p">0 Votes for helpful, 0 Comments</p>
+					</div>
+					<div class="sanjay_help">
+						<div class="sanjay_help_item">
+							<i class="fa-solid fa-thumbs-up"></i>
+							<span>Helpful</span>
+						</div>
+						<div class="sanjay_help_item">
+							<i class="fa-solid fa-comment"></i>
+							<span>Comment</span>
+						</div>
+						<div class="sanjay_help_item">
+							<i class="fa-solid fa-share"></i>
+							<span>Share</span>
+						</div>
+					</div>
+				</div>
+				<div class="see_menu1">
+					<a href="#">
+						View all reviews
+						<i class="fa-solid fa-caret-right"></i>
+					</a>
+				</div>
+				<div class="oursponsors1">
+					<h3 class="sponh3">OUR SPONSORS</h3>
+					<div class="sponsors1">
+						<div class="sponsor1">
+							<img src="https://b.zmtcdn.com/data/pictures/chains/1/18808521/11fa8f30e1ec4b2caea6a4c9c91f4ed7_featured_v2.jpg" alt="">
+							<h3>Krishnapatnam</h3>
+							<span class="krish">
+								<span>3.9</span>
+							    <span><i class="fa-solid fa-star"></i></span>
+							</span>
+							<span class="rate_tag">DINING</span>
+							<span class="rate_line">|</span>
+							<span class="krish">
+								<span>3.6</span>
+							    <span><i class="fa-solid fa-star"></i></span>
+							</span>
+							<span class="rate_tag">DELIVERY</span>
+							<div class="spons_desc">
+								Andhra, South Indian, Mughlai, Bar Food, Beverages
+							</div>
+						</div>
+						<div class="sponsor1">
+							<img src="https://b.zmtcdn.com/data/pictures/8/20524778/275f822a234df8cc977a50e9ae204a3d_featured_v2.jpg" alt="">
+							<h3>Pause</h3>
+							<span class="krish">
+								<span>New</span>
+							    <span><i class="fa-solid fa-star"></i></span>
+							</span>
+							<span class="rate_tag">Newly opened</span>						
+							<div class="spons_desc">
+								Fast Food, Chinese, North Indian, South Indian, Biryani, Desserts, Shakes, Beverages
+							</div>
+						</div>
+						<div class="sponsor1">
+							<img src="https://b.zmtcdn.com/data/pictures/1/20075681/b6d71fbbbc04d3986e1df03c2c6f25e0_featured_v2.jpg" alt="">
+							<h3>Gaurang`s Kitchen</h3>
+							<span class="krish">
+								<span>3.6</span>
+							    <span><i class="fa-solid fa-star"></i></span>
+							</span>
+							<span class="rate_tag">DINING</span>
+							<span class="rate_line">|</span>
+							<span class="krish">
+								<span>3.7</span>
+							    <span><i class="fa-solid fa-star"></i></span>
+							</span>
+							<span class="rate_tag">DELIVERY</span>
+							<div class="spons_desc">
+							    South Indian, Street Food, North Indian, Biryani, Desserts, Beverages
+							</div>
+						</div>
+						<div class="sponsor1">
+							<img src="https://b.zmtcdn.com/data/pictures/1/20495221/187cae79ac2ec9cf353bea14dd282576_featured_v2.jpg" alt="">
+							<h3>Wyld Dog</h3>
+							<span class="krish">
+								<span>New</span>
+							    <span><i class="fa-solid fa-star"></i></span>
+							</span>
+							<span class="rate_tag">Newly opened</span>
+							<div class="spons_desc">
+								North Indian, Italian, Continental, Pizza, Desserts
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="report">
+					<h2>HELP US MAKE ZOMATO BETTER</h2>
+					<h3>Report an error in this listing</h3>
+					<p>Help us make Zomato more updated and relevant for everyone</p>
+					<div class="see_menu">
+						<a href="#">
+							Report now
+							<i class="fa-solid fa-caret-right"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="right_sticky1" id="right_sticky1">
+				<div class="call">
+					<h3>Call</h3>
+					<p>+919614226226</p>
+					<p>+919614227227</p>
+				</div>
+				<div class="direction">
+					<h3>Direction</h3>
+					<img src="https://maps.zomato.com/php/staticmap?center=17.4958558000,78.3995906000&maptype=zomato&markers=17.4958558000,78.3995906000,pin_res32&sensor=false&scale=2&zoom=16&language=en&size=240x150&size=400x240&size=650x250"
+						alt="">
+					<h5>Ⓒ <a href="#">OpenStreetMap</a> contributors</h5>
+					<p>3rd Floor, PNR Empire, KPHB Main Road, Opposite Kalamandir, Kukatpally, Hyderabad</p>
+				</div>
+				<div class="direction_buttons">
+					<div class="direction_btn_1">
+						<i class="fa-regular fa-copy"></i>
+						<span>Copy</span>
+					</div>
+					<div class="direction_btn_2">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="#EF4F5F" width="16" height="16"
+							viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img"
+							class="sc-rbbb40-0 kMNrPk">
+							<title>direction-line</title>
+							<path
+								d="M19.2 8.44l-7.22-7.22c-0.52-0.48-1.2-0.8-1.98-0.8s-1.46 0.32-1.98 0.8v0l-7.2 7.22c-0.52 0.5-0.82 1.2-0.82 1.98s0.3 1.46 0.82 1.98l7.2 7.2c0.5 0.52 1.2 0.82 1.98 0.82s1.48-0.3 1.98-0.82l7.22-7.2c0.5-0.52 0.8-1.22 0.8-1.98s-0.3-1.48-0.8-1.98v0zM18.16 11.38l-7.2 7.2c-0.24 0.24-0.58 0.38-0.94 0.38s-0.72-0.14-0.96-0.38v0l-7.22-7.2c-0.24-0.24-0.4-0.58-0.4-0.96s0.16-0.7 0.4-0.94v0l7.2-7.22c0.24-0.24 0.58-0.4 0.96-0.4s0.7 0.16 0.94 0.4l7.2 7.2c0.24 0.24 0.4 0.58 0.4 0.94s-0.16 0.72-0.4 0.96v0zM12.2 6.96c-0.040-0.040-0.080-0.060-0.12-0.060-0.1 0-0.18 0.080-0.18 0.18 0 0 0 0 0 0v0 1.66h-3.56c-1.18 0-2.14 0.96-2.14 2.16v0 2.38c0 0.26 0.2 0.46 0.46 0.46v0h0.48c0.26 0 0.48-0.2 0.48-0.46v0-2.38c0-0.4 0.32-0.72 0.72-0.72h3.56v1.66c0 0 0 0 0 0 0 0.1 0.080 0.18 0.18 0.18 0.040 0 0.080-0.020 0.12-0.060v0l2.34-2.32c0.040-0.040 0.080-0.1 0.080-0.18s-0.040-0.12-0.080-0.16v0z">
+							</path>
+						</svg>
+						<span>Direction</span>
+					</div>
+				</div>
+				<div class="see_all">
+					<div>
+						<a href="#">
+							See all 18 Kritunga Restaurant outlets in Hyderabad
+							<i class="fa-solid fa-caret-right"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--section-4 ends-->
+		</div>
+		<!--overview ends-->
+
+        <!--order online starts-->
+		<div id="order_online">
+			<div class="section-6">
+				<nav class="order_nav">
+					<ul>
+						<li><a href="#recomended"><span>Recomended (7)</span></a></li>
+						<li><a href="#biryani"><span>Biryani (7)</span></a></li>
+						<li><a href="#chicken_curries"><span>Chicken Curries (1)</span></a></li>
+						<li><a href="#combo"><span>Combo (1)</span></a></li>
+						<li><a href="#family_pack"><span>Family Pack (5)</span></a></li>
+					</ul>
+				</nav>
+                <div class="order_main">
+					<div class="order_part1">
+						<div class="order_heading">
+							<h3>Order Online</h3>
+							<div class="order_search">
+								<i class="fa-solid fa-magnifying-glass"></i>
+								<input type="text" placeholder="Search within menu">
+							</div>
+						</div>
+						<div class="live">
+							<svg xmlns="http://www.w3.org/2000/svg" fill="#828282" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>explore</title><path d="M10 0.42c-5.52 0-10 4.48-10 10s4.48 10 10 10c5.52 0 10-4.48 10-10v0c0-5.52-4.48-10-10-10v0zM10 18.98c-4.74 0-8.58-3.84-8.58-8.56s3.84-8.58 8.58-8.58c4.74 0 8.58 3.84 8.58 8.58v0c0 4.72-3.84 8.56-8.58 8.56v0zM14.28 5.84l-5.8 2.6c-0.2 0.1-0.36 0.26-0.46 0.46v0l-2.6 5.8c0 0.020 0 0.040 0 0.060 0 0.14 0.1 0.24 0.22 0.24 0.040 0 0.060 0 0.080-0.020v0l5.78-2.58c0.2-0.1 0.36-0.26 0.46-0.46v-0.020l2.62-5.8c0-0.020 0-0.040 0-0.060 0-0.12-0.1-0.22-0.22-0.22-0.020 0-0.060 0-0.080 0v0zM10 11.6c-0.66 0-1.18-0.52-1.18-1.18s0.52-1.2 1.18-1.2c0.66 0 1.2 0.54 1.2 1.2v0c0 0.66-0.54 1.18-1.2 1.18v0z"></path></svg>
+							<span>Live track your order</span>
+							<span>|</span>
+							<svg xmlns="http://www.w3.org/2000/svg" fill="#828282" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>time</title><path d="M14.76 9.040h-4.22l-2.58-4.28c-0.147-0.354-0.489-0.598-0.889-0.598-0.53 0-0.96 0.43-0.96 0.96 0 0.227 0.079 0.436 0.211 0.6l-0.001-0.002 2.86 4.76c0.172 0.278 0.474 0.46 0.82 0.46 0 0 0 0 0.001 0h4.76c0.467-0.070 0.822-0.469 0.822-0.95s-0.354-0.88-0.817-0.949l-0.005-0.001zM10 0c-5.523 0-10 4.477-10 10s4.477 10 10 10c5.523 0 10-4.477 10-10v0c0-5.523-4.477-10-10-10v0zM10 18.58c-4.739 0-8.58-3.841-8.58-8.58s3.841-8.58 8.58-8.58c4.739 0 8.58 3.841 8.58 8.58v0c0 4.739-3.841 8.58-8.58 8.58v0z"></path></svg>
+							<span>25 min</span>
+						</div>
+						<div class="coupons">
+							<div class="coupon_item">
+								<a href="#">
+									<h5>50% OFF up to &#8377; 100</h5>
+									<p>use code WELCOME50</p>
+								</a>
+							</div>
+							<div class="coupon_item">
+								<a href="#">
+									<h5>Flat &#8377; 200 OFF</h5>
+									<p>use code FLAT200</p>
+								</a>
+							</div>
+							<div class="coupon_item">
+								<a href="#">
+									<h5>Get up to &#8377; 100 Paytm cashback</h5>
+									<p>use code PAYTMFEAST</p>
+								</a>
+							</div>
+							<div class="coupon_item">
+								<a href="#">
+									<h5>Flat 25% OFF</h5>
+									<p>use code SAVEBIG</p>
+								</a>
+							</div>
+						</div>
+						<div class="checkbox">
+							<input type="checkbox">
+							<label>veg only</label>
+						</div>
+				   </div>
+				   <div id="recomended">
+                        <h2>Recommended</h2>
+					    <div class="recomended_items">
+						    <div class="recommended_card">
+							    <div class="recommended_card1">
+									<img src="https://b.zmtcdn.com/data/dish_photos/d37/4c11070220bee9401a994268deecbd37.jpg?fit=around|130:130&crop=130:130;*,*" alt="">
+							        <div class="rec_card_desc">
+										<h4>kritunga</h4>
+								        <h4>Chicken Biryani</h4>
+								        <p class="bestseller">BESTSELLER</p>
+								        <div class="stars_recomended">
+									        <svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+									        <svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+									        <svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+									        <svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><linearGradient id="clc50vcty007b3n6zpf0t6vws" x1="0" x2="100%" y1="0" y2="0"><stop offset="0" stop-color="#F3C117"></stop><stop offset="29%" stop-color="#F3C117"></stop><stop offset="30%" stop-color="#E8E8E8"></stop><stop offset="1" stop-color="#E8E8E8"></stop></linearGradient><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z" fill="url(#clc50vcty007b3n6zpf0t6vws)"></path></svg>
+									        <svg xmlns="http://www.w3.org/2000/svg" fill="#E8E8E8" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+									        <span>479 votes</span>
+								        </div>
+								        <p class="price">₹ 280</p>
+							        </div>
+								</div>
+								<div class="add_btn" id="add">
+									<button>Add</button>
+								</div>
+						    </div>
+
+							<div class="recommended_card">
+							    <div class="recommended_card1">
+								<img src="https://b.zmtcdn.com/data/dish_photos/c1d/42ebc15660a6341339afd0843c157c1d.jpg?fit=around|130:130&crop=130:130;*,*" alt="">
+							    <div class="rec_card_desc">
+									<h4>kritunga</h4>
+								    <h4>Pot Biryani</h4>
+								    <p class="bestseller">BESTSELLER</p>
+								    <div class="stars_recomended">
+									    <svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+									    <svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+									    <svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+									    <svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><linearGradient id="clc50vcu0007h3n6z5zw5hwff" x1="0" x2="100%" y1="0" y2="0"><stop offset="0" stop-color="#F3C117"></stop><stop offset="47%" stop-color="#F3C117"></stop><stop offset="48%" stop-color="#E8E8E8"></stop><stop offset="1" stop-color="#E8E8E8"></stop></linearGradient><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z" fill="url(#clc50vcu0007h3n6z5zw5hwff)"></path></svg>
+									    <svg xmlns="http://www.w3.org/2000/svg" fill="#E8E8E8" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+									    <span>351 votes</span>
+								    </div>
+								    <p class="price">₹ 320</p>
+							        </div>
+								</div>
+								<div class="add_btn" id="add">
+									<button>Add</button>
+								</div>
+						    </div>
+
+							<div class="recommended_card">
+							    <div class="recommended_card1">
+									<img src="https://b.zmtcdn.com/data/dish_photos/166/0a6625a87a6751cfcfa6d56ba79a1166.jpg?fit=around|130:130&crop=130:130;*,*" alt="">
+							    <div class="rec_card_desc">
+									<h4>kritunga</h4>
+								    <h4>Kheema Biryani</h4>
+								    <p class="bestseller">BESTSELLER</p>
+								    <div class="stars_recomended">
+									    <svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+									    <svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+									    <svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><linearGradient id="clc50vcu1007m3n6z673lqeme" x1="0" x2="100%" y1="0" y2="0"><stop offset="0" stop-color="#F3C117"></stop><stop offset="64%" stop-color="#F3C117"></stop><stop offset="65%" stop-color="#E8E8E8"></stop><stop offset="1" stop-color="#E8E8E8"></stop></linearGradient><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z" fill="url(#clc50vcu1007m3n6z673lqeme)"></path></svg>
+									    <svg xmlns="http://www.w3.org/2000/svg" fill="#E8E8E8" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+									    <svg xmlns="http://www.w3.org/2000/svg" fill="#E8E8E8" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+									    <span>101 votes</span>
+								    </div>
+								    <p class="price">₹ 385</p>
+							        </div>
+								</div>
+								<div class="add_btn" id="add">
+									<button>Add</button>
+								</div>
+						    </div>
+							<div class="recommended_card">
+							    <div class="recommended_card1">
+									<img src="https://b.zmtcdn.com/data/dish_photos/0a9/c9d061591ecdffdd64894aa0d2adb0a9.jpg?fit=around|130:130&crop=130:130;*,*" alt="">
+							    <div class="rec_card_desc">
+									<h4>kritunga</h4>
+								    <h4>Mini Special Chicken Biryani</h4>
+								    <p class="bestseller">BESTSELLER</p>
+								    <div class="stars_recomended">
+									    <svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+									    <svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+									    <svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+									    <svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><linearGradient id="clc50vcu2007t3n6z8ugkc32m" x1="0" x2="100%" y1="0" y2="0"><stop offset="0" stop-color="#F3C117"></stop><stop offset="38%" stop-color="#F3C117"></stop><stop offset="39%" stop-color="#E8E8E8"></stop><stop offset="1" stop-color="#E8E8E8"></stop></linearGradient><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z" fill="url(#clc50vcu2007t3n6z8ugkc32m)"></path></svg>
+									    <svg xmlns="http://www.w3.org/2000/svg" fill="#E8E8E8" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+									    <span>381 votes</span>
+								    </div>
+								    <p class="price">₹ 160</p>
+							        </div>
+								</div>
+								<div class="add_btn" id="add">
+									<button>Add</button>
+								</div>
+						    </div>
+							<div class="recommended_card">
+							    <div class="recommended_card1">
+									<img src="https://b.zmtcdn.com/data/dish_photos/9ac/40872b573d355ec3729dbaa299dc69ac.jpg?fit=around|130:130&crop=130:130;*,*" alt="">
+							    <div class="rec_card_desc">
+									<h4>kritunga</h4>
+								    <h4>Spl Chicken Biryani</h4>
+								    <p class="bestseller">BESTSELLER</p>
+								    <div class="stars_recomended">
+									    <svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+									    <svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+									    <svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+									    <svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><linearGradient id="clc50vcty007b3n6zpf0t6vws" x1="0" x2="100%" y1="0" y2="0"><stop offset="0" stop-color="#F3C117"></stop><stop offset="29%" stop-color="#F3C117"></stop><stop offset="30%" stop-color="#E8E8E8"></stop><stop offset="1" stop-color="#E8E8E8"></stop></linearGradient><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z" fill="url(#clc50vcty007b3n6zpf0t6vws)"></path></svg>
+									    <svg xmlns="http://www.w3.org/2000/svg" fill="#E8E8E8" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+									    <span>295 votes</span>
+								    </div>
+								    <p class="price">₹ 640</p>
+							        </div>
+								</div>
+								<div class="add_btn" id="add">
+									<button>Add</button>
+								</div>
+						    </div>
+
+							<div class="recommended_card">
+							    <div class="recommended_card1">
+									<img src="https://b.zmtcdn.com/data/dish_photos/58e/0da3612298f9750d1d5356b2329c458e.jpg?fit=around|130:130&crop=130:130;*,*" alt="">
+							    <div class="rec_card_desc">
+									<h4>kritunga</h4>
+								    <h4>Paneer Biryani</h4>
+								    <p class="bestseller">BESTSELLER</p>
+								    <div class="stars_recomended">
+									    <svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+									    <svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+									    <svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+									    <svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><linearGradient id="clc50vcty007b3n6zpf0t6vws" x1="0" x2="100%" y1="0" y2="0"><stop offset="0" stop-color="#F3C117"></stop><stop offset="29%" stop-color="#F3C117"></stop><stop offset="30%" stop-color="#E8E8E8"></stop><stop offset="1" stop-color="#E8E8E8"></stop></linearGradient><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z" fill="url(#clc50vcty007b3n6zpf0t6vws)"></path></svg>
+									    <svg xmlns="http://www.w3.org/2000/svg" fill="#E8E8E8" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+									    <span>253 votes</span>
+								    </div>
+								    <p class="price">₹ 295</p>
+							        </div>
+								</div>
+								<div class="add_btn" id="add">
+									<button>Add</button>
+								</div>
+						    </div>
+							<div class="recommended_card">
+							    <div class="recommended_card1">
+									<img src="https://b.zmtcdn.com/data/dish_photos/866/c837e63f7f0d4c4aebf5619e8c98b866.jpg?fit=around|130:130&crop=130:130;*,*" alt="">
+							    <div class="rec_card_desc">
+									<h4>kritunga</h4>
+								    <h4>Prawns Biryani</h4>
+								    <p class="bestseller">BESTSELLER</p>
+								    <div class="stars_recomended">
+									    <svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+									    <svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+									    <svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+									    <svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><linearGradient id="clc50vcu0007h3n6z5zw5hwff" x1="0" x2="100%" y1="0" y2="0"><stop offset="0" stop-color="#F3C117"></stop><stop offset="47%" stop-color="#F3C117"></stop><stop offset="48%" stop-color="#E8E8E8"></stop><stop offset="1" stop-color="#E8E8E8"></stop></linearGradient><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z" fill="url(#clc50vcu0007h3n6z5zw5hwff)"></path></svg>
+									    <svg xmlns="http://www.w3.org/2000/svg" fill="#E8E8E8" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+									    <span>100 votes</span>
+								    </div>
+								    <p class="price">₹ 325</p>
+							        </div>
+								</div>
+								<div class="add_btn" id="add">
+									<button>Add</button>
+								</div>
+						    </div>
+					    </div>
+				    </div>
+				    <div id="biryani">
+						<h2>Biryani</h2>
+						<div class="recomended_items">
+
+							<div class="recommended_card">
+							    <div class="recommended_card1">
+									<img src="https://b.zmtcdn.com/data/dish_photos/80f/bbdc2b2e15d5df99458d41f9d1e4c80f.jpg?fit=around|130:130&crop=130:130;*,*" alt="">
+								<div class="rec_card_desc">
+									<h4>kritunga</h4>
+									<h4>Avakaya Veg Biryani</h4>
+									
+									<p class="bestseller">BESTSELLER</p>
+									<div class="stars_recomended">
+										<svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+										<svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+										<svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+										<svg xmlns="http://www.w3.org/2000/svg" fill="#E8E8E8" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+										<svg xmlns="http://www.w3.org/2000/svg" fill="#E8E8E8" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+										<span>10 votes</span>
+									</div>
+									<p class="price">₹ 230</p>
+							        </div>
+								</div>
+								<div class="add_btn" id="add">
+									<button>Add</button>
+								</div>
+						    </div>
+
+							<div class="recommended_card">
+							    <div class="recommended_card1">
+									<img src="https://b.zmtcdn.com/data/dish_photos/dd6/7424ec3adbe5b84df57b623f7e90add6.jpg?fit=around|130:130&crop=130:130;*,*" alt="">
+								<div class="rec_card_desc">
+									<h4>kritunga</h4>
+									<h4>Mutton Biryani</h4>
+									<p class="bestseller">BESTSELLER</p>
+									<div class="stars_recomended">
+										<svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+										<svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+										<svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+										<svg xmlns="http://www.w3.org/2000/svg" fill="#E8E8E8" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+										<svg xmlns="http://www.w3.org/2000/svg" fill="#E8E8E8" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+										<span>18 votes</span>
+									</div>
+									<p class="price">₹ 419</p>
+							        </div>
+								</div>
+								<div class="add_btn" id="add">
+									<button>Add</button>
+								</div>
+						    </div>
+
+							<div class="recommended_card">
+							    <div class="recommended_card1">
+									<img src="https://b.zmtcdn.com/data/dish_photos/4af/e780c2c9b7c4176668a1708cb56cd4af.jpg?fit=around|130:130&crop=130:130;*,*" alt="">
+								<div class="rec_card_desc">
+									<h4>kritunga</h4>
+									<h4>Gongura Chicken Biryani</h4>
+									<p class="bestseller">BESTSELLER</p>
+									<div class="stars_recomended">
+										<svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+										<svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+										<svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+										<svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><linearGradient id="clc50vcv200cu3n6z78b5oehm" x1="0" x2="100%" y1="0" y2="0"><stop offset="0" stop-color="#F3C117"></stop><stop offset="66%" stop-color="#F3C117"></stop><stop offset="67%" stop-color="#E8E8E8"></stop><stop offset="1" stop-color="#E8E8E8"></stop></linearGradient><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z" fill="url(#clc50vcv200cu3n6z78b5oehm)"></path></svg>
+										<svg xmlns="http://www.w3.org/2000/svg" fill="#E8E8E8" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+										<span>30 votes</span>
+									</div>
+									<p class="price">&#8377; 315</p>
+							        </div>
+								</div>
+								<div class="add_btn" id="add">
+									<button>Add</button>
+								</div>
+						    </div>
+
+							<div class="recommended_card">
+							    <div class="recommended_card1">
+									<img src="https://b.zmtcdn.com/data/dish_photos/14f/3d97879b02b15658f62e8ca62213f14f.jpg?fit=around|130:130&crop=130:130;*,*" alt="">
+								<div class="rec_card_desc">
+									<h4>kritunga</h4>
+									<h4>Lollipop Biryani</h4>
+									<p class="bestseller">BESTSELLER</p>
+									<div class="stars_recomended">
+										<svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+										<svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+										<svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+										<svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><linearGradient id="clc50vcuj00a53n6z0qjb1o3s" x1="0" x2="100%" y1="0" y2="0"><stop offset="0" stop-color="#F3C117"></stop><stop offset="59%" stop-color="#F3C117"></stop><stop offset="60%" stop-color="#E8E8E8"></stop><stop offset="1" stop-color="#E8E8E8"></stop></linearGradient><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z" fill="url(#clc50vcuj00a53n6z0qjb1o3s)"></path></svg>
+										<svg xmlns="http://www.w3.org/2000/svg" fill="#E8E8E8" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+										<span>46 votes</span>
+									</div>
+									<p class="price">₹ 320</p>
+							        </div>
+								</div>
+								<div class="add_btn" id="add">
+									<button>Add</button>
+								</div>
+						    </div>
+
+							<div class="recommended_card">
+							    <div class="recommended_card1">
+									<img src="https://b.zmtcdn.com/data/dish_photos/228/7a7d42e1ca31aed7405eb121aa7b7228.jpg?fit=around|130:130&crop=130:130;*,*" alt="">
+								<div class="rec_card_desc">
+									<h4>kritunga</h4>
+									<h4>Mushroom Biryani</h4>
+									<p class="bestseller">BESTSELLER</p>
+									<div class="stars_recomended">
+										<svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+										<svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+										<svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+										<svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><linearGradient id="clc54qnwe01t43n6zre7optbo" x1="0" x2="100%" y1="0" y2="0"><stop offset="0" stop-color="#F3C117"></stop><stop offset="74%" stop-color="#F3C117"></stop><stop offset="75%" stop-color="#E8E8E8"></stop><stop offset="1" stop-color="#E8E8E8"></stop></linearGradient><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z" fill="url(#clc54qnwe01t43n6zre7optbo)"></path></svg>
+										<svg xmlns="http://www.w3.org/2000/svg" fill="#E8E8E8" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+										<span>115 votes</span>
+									</div>
+									<p class="price">₹ 265</p>
+							        </div>
+								</div>
+								<div class="add_btn" id="add">
+									<button>Add</button>
+								</div>
+						    </div>
+
+							<div class="recommended_card">
+							    <div class="recommended_card1">
+									<img src="https://b.zmtcdn.com/data/dish_photos/6b4/6789239b08fac55a62a313ff9dd336b4.jpg?fit=around|130:130&crop=130:130;*,*" alt="">
+								<div class="rec_card_desc">
+									<h4>kritunga</h4>
+									<h4>Nizam Chicken Biryani</h4>
+									<p class="bestseller">BESTSELLER</p>
+									<div class="stars_recomended">
+										<svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+										<svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+										<svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><linearGradient id="clc5mda7y00av3n6zjsgd7zkr" x1="0" x2="100%" y1="0" y2="0"><stop offset="0" stop-color="#F3C117"></stop><stop offset="44%" stop-color="#F3C117"></stop><stop offset="45%" stop-color="#E8E8E8"></stop><stop offset="1" stop-color="#E8E8E8"></stop></linearGradient><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z" fill="url(#clc5mda7y00av3n6zjsgd7zkr)"></path></svg>
+										<svg xmlns="http://www.w3.org/2000/svg" fill="#E8E8E8" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+										<svg xmlns="http://www.w3.org/2000/svg" fill="#E8E8E8" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+										<span>10 votes</span>
+									</div>
+									<p class="price">₹ 305</p>
+							        </div>
+								</div>
+								<div class="add_btn" id="add">
+									<button>Add</button>
+								</div>
+						    </div>
+
+							<div class="recommended_card">
+							    <div class="recommended_card1">
+									<img src="https://b.zmtcdn.com/data/dish_photos/897/48446f04fdee106b5b6ce555b2b91897.jpg?fit=around|130:130&crop=130:130;*,*" alt="">
+								<div class="rec_card_desc">
+									<h4>kritunga</h4>
+									<h4>Veg Biryani</h4>
+									<p class="bestseller">BESTSELLER</p>
+									<div class="stars_recomended">
+										<svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+										<svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+										<svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+										<svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><linearGradient id="clc5mda8600c23n6zbw12sbuf" x1="0" x2="100%" y1="0" y2="0"><stop offset="0" stop-color="#F3C117"></stop><stop offset="51%" stop-color="#F3C117"></stop><stop offset="52%" stop-color="#E8E8E8"></stop><stop offset="1" stop-color="#E8E8E8"></stop></linearGradient><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z" fill="url(#clc5mda8600c23n6zbw12sbuf)"></path></svg>
+										<svg xmlns="http://www.w3.org/2000/svg" fill="#E8E8E8" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+										<span>175 votes</span>
+									</div>
+									<p class="price">₹ 220</p>
+							        </div>
+								</div>
+								<div class="add_btn" id="add">
+									<button>Add</button>
+								</div>
+						    </div>
+						</div>
+				    </div>
+					<div id="chicken_curries">
+                        <h2>Chicken Curries</h2>
+						<div class="recomended_items">
+
+							<div class="recommended_card">
+							    <div class="recommended_card1">
+									<img src="https://b.zmtcdn.com/data/dish_photos/228/7a7d42e1ca31aed7405eb121aa7b7228.jpg?fit=around|130:130&crop=130:130;*,*" alt="">
+								<div class="rec_card_desc">
+									<h4>kritunga</h4>
+									<h4>Chicken Mughlai</h4>
+									<p class="bestseller">BESTSELLER</p>
+									<div class="stars_recomended">
+										<svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+										<svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+										<svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+										<svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+										<svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><linearGradient id="clc54qnwq01un3n6zuiorr8fn" x1="0" x2="100%" y1="0" y2="0"><stop offset="0" stop-color="#F3C117"></stop><stop offset="25%" stop-color="#F3C117"></stop><stop offset="26%" stop-color="#E8E8E8"></stop><stop offset="1" stop-color="#E8E8E8"></stop></linearGradient><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z" fill="url(#clc54qnwq01un3n6zuiorr8fn)"></path></svg>
+										<span>10 votes</span>
+									</div>
+									<p class="price">₹ 295</p>
+							        </div>
+								</div>
+								<div class="add_btn" id="add">
+									<button>Add</button>
+								</div>
+						    </div> 
+						</div>
+					</div>
+					<div id="combo">
+                        <h2>Combo</h2>
+						<div class="recomended_items">
+
+						    <div class="recommended_card">
+							    <div class="recommended_card1">
+									<img src="https://b.zmtcdn.com/data/dish_photos/3a4/8c9df0f34716c1a7dd331d86f3d3d3a4.jpg?fit=around|130:130&crop=130:130;*,*" alt="">
+								    <div class="rec_card_desc">
+										<h4>kritunga</h4>
+										<h4>Mini Jeera Rice + Mini Dalfry + Gulabjam</h4>
+										<p class="bestseller">BESTSELLER</p>
+										<div class="stars_recomended">
+											<svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+											<svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+											<svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+											<svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+											<svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><linearGradient id="clc54qnwq01un3n6zuiorr8fn" x1="0" x2="100%" y1="0" y2="0"><stop offset="0" stop-color="#F3C117"></stop><stop offset="25%" stop-color="#F3C117"></stop><stop offset="26%" stop-color="#E8E8E8"></stop><stop offset="1" stop-color="#E8E8E8"></stop></linearGradient><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z" fill="url(#clc54qnwq01un3n6zuiorr8fn)"></path></svg>
+											<span>20 votes</span>
+										</div>
+										<p class="price">₹ 175</p>
+									</div>
+								</div>
+								<div class="add_btn" id="add">
+									<button>Add</button>
+								</div>
+						    </div>
+						</div>
+					</div>
+					<div id="family_pack">
+                        <h2>Family Pack Biryani</h2>
+						<div class="recomended_items">
+
+							<div class="recommended_card">
+							    <div class="recommended_card1">
+									<img src="https://b.zmtcdn.com/data/dish_photos/677/d526e9e1aebcc99a82f73f54dda63677.jpg?fit=around|130:130&crop=130:130;*,*" alt="">
+								<div class="rec_card_desc">
+									<h4>kritunga</h4>
+									<h4>Family Pack Fry Piece Chicken Biryani</h4>
+									<p class="bestseller">BESTSELLER</p>
+									<div class="stars_recomended">
+										<svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+										<svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+										<svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+										<svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><linearGradient id="clc5mda8a00cl3n6zs7m4pp24" x1="0" x2="100%" y1="0" y2="0"><stop offset="0" stop-color="#F3C117"></stop><stop offset="15%" stop-color="#F3C117"></stop><stop offset="16%" stop-color="#E8E8E8"></stop><stop offset="1" stop-color="#E8E8E8"></stop></linearGradient><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z" fill="url(#clc5mda8a00cl3n6zs7m4pp24)"></path></svg>
+										<svg xmlns="http://www.w3.org/2000/svg" fill="#E8E8E8" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+										<span>128 votes</span>
+									</div>
+									<p class="price">₹ 640</p>
+									</div>
+								</div>
+								<div class="add_btn" id="add">
+									<button>Add</button>
+								</div>
+						    </div>
+							<div class="recommended_card">
+							    <div class="recommended_card1">
+									<img src="https://b.zmtcdn.com/data/dish_photos/613/d26692a9f0b8495905b57b08b2704613.jpg?fit=around|130:130&crop=130:130;*,*" alt="">
+								<div class="rec_card_desc">
+									<h4>kritunga</h4>
+									<h4>Family Pack Gongura Chicken Biryani</h4>
+									<p class="bestseller">BESTSELLER</p>
+									<div class="stars_recomended">
+										<svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+										<svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+										<svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+										<svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+										<svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><linearGradient id="clc5mda8a00cl3n6zs7m4pp24" x1="0" x2="100%" y1="0" y2="0"><stop offset="0" stop-color="#F3C117"></stop><stop offset="15%" stop-color="#F3C117"></stop><stop offset="16%" stop-color="#E8E8E8"></stop><stop offset="1" stop-color="#E8E8E8"></stop></linearGradient><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z" fill="url(#clc5mda8a00cl3n6zs7m4pp24)"></path></svg>
+										<span>7 votes</span>
+									</div>
+									<p class="price">₹ 650</p>
+									</div>
+								</div>
+								<div class="add_btn" id="add">
+									<button>Add</button>
+								</div>
+						    </div>
+							<div class="recommended_card">
+							    <div class="recommended_card1">
+									<img src="https://b.zmtcdn.com/data/dish_photos/8ec/b7ed1c69acf5fc76e2f27308b1df88ec.jpg?fit=around|130:130&crop=130:130;*,*" alt="">
+	
+								    <div class="rec_card_desc">
+									<h4>kritunga</h4>
+									<h4>Kaju Biryani Family</h4>
+									<p class="bestseller">BESTSELLER</p>
+									<div class="stars_recomended">
+										<svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+										<svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+										<svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+										<svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+										<svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><linearGradient id="clc5mda8a00cl3n6zs7m4pp24" x1="0" x2="100%" y1="0" y2="0"><stop offset="0" stop-color="#F3C117"></stop><stop offset="15%" stop-color="#F3C117"></stop><stop offset="16%" stop-color="#E8E8E8"></stop><stop offset="1" stop-color="#E8E8E8"></stop></linearGradient><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z" fill="url(#clc5mda8a00cl3n6zs7m4pp24)"></path></svg>
+										<span>7 votes</span>
+									</div>
+									<p class="price">₹ 725</p>
+									</div>
+
+								</div>
+								<div class="add_btn" id="add">
+									<button>Add</button>
+								</div>
+						    </div>
+						    <div class="recommended_card">
+							    <div class="recommended_card1">
+									<img src="https://b.zmtcdn.com/data/dish_photos/80f/bbdc2b2e15d5df99458d41f9d1e4c80f.jpg?fit=around|130:130&crop=130:130;*,*" alt="">
+								<div class="rec_card_desc">
+									<h4>kritunga</h4>
+									<h4>Avakaya Veg Family</h4>
+									<p class="bestseller">BESTSELLER</p>
+									<div class="stars_recomended">
+										<svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+										<svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+										<svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+										<svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+										<svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><linearGradient id="clc5mda8a00cl3n6zs7m4pp24" x1="0" x2="100%" y1="0" y2="0"><stop offset="0" stop-color="#F3C117"></stop><stop offset="15%" stop-color="#F3C117"></stop><stop offset="16%" stop-color="#E8E8E8"></stop><stop offset="1" stop-color="#E8E8E8"></stop></linearGradient><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z" fill="url(#clc5mda8a00cl3n6zs7m4pp24)"></path></svg>
+										<span>7 votes</span>
+									</div>
+									<p class="price">₹ 715</p>
+									</div>
+								</div>
+								<a href="#">
+								  <div class="add_btn" id="add">
+									<button>Add</button>
+								   </div>
+							    </a>
+						    </div>
+
+							<div class="recommended_card">
+							    <div class="recommended_card1">
+									<img src="https://b.zmtcdn.com/data/dish_photos/7b4/ddf9aafcc59f94e2173c794d8c1557b4.jpg?fit=around|130:130&crop=130:130;*,*" alt="">
+								  <div class="rec_card_desc">
+									<h4>kritunga</h4>
+									<h4>Natukodi Pulao Family</h4>
+									<p class="bestseller">BESTSELLER</p>
+									<div class="stars_recomended">
+										<svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+										<svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+										<svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+										<svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
+										<svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV"><linearGradient id="clc5mda8a00cl3n6zs7m4pp24" x1="0" x2="100%" y1="0" y2="0"><stop offset="0" stop-color="#F3C117"></stop><stop offset="15%" stop-color="#F3C117"></stop><stop offset="16%" stop-color="#E8E8E8"></stop><stop offset="1" stop-color="#E8E8E8"></stop></linearGradient><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z" fill="url(#clc5mda8a00cl3n6zs7m4pp24)"></path></svg>
+										<span>7 votes</span>
+									</div>
+									<p class="price">₹ 520</p>
+									</div>
+								</div>
+								
+								<div class="add_btn" id="add" >
+							
+									<button>Add</button>
+								
+	
+								</div>
+								
+						    </div> 
+						</div>
+					</div>
+					<div class="fssai">
+						<img src="https://b.zmtcdn.com/data/o2_banners/54de14cdc3793dfce39a46c989f3e5c1.jpg" alt="">
+						<p>Lic. No. 13619013000122</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--order online ends-->
+
+        <!--reviews section starts-->
+        <div id="reviews">
+			<div class="section-7">
+				<h2>Kritunga Restaurant Reviews</h2>
+				<p>
+					All Reviews
+					<i class="fa-solid fa-caret-down"></i>
+				</p>
+				<div class="sanjay">
+					<div class="sanjay_pro">
+						<div class="sanjay_pic">
+							<img src="https://b.zmtcdn.com/web/assets/2267aec184e096c98c46a1565a5563661664945464.png?fit=around%7C100%3A100&crop=100%3A100%3B%2A%2C%2A" alt="">
+							<div class="sanjay_name">
+								<b>Dharma</b>
+								<p>2 reviews . 0 Followers</p>
+							</div>
+						</div>
+						<div class="follow">
+							<a href="#">Follow</a>
+						</div>
+					</div>
+					<div class="sanjay_rate">
+						<span class="krish1">
+							<span>4</span>
+							<span><i class="fa-solid fa-star"></i></span>
+						</span>
+						<span style="margin: 0 10px;">DELIVERY</span>
+						<span style="color: rgb(155,153,153);">11 minutes ago</span>
+					</div>
+					<div class="sanjay_desc">
+						<p style="color: rgb(111, 110, 110);">There is no such taste..Two small chicken pieces</p>
+						<p class="san_p">0 Votes for helpful, 0 Comments</p>
+					</div>
+					<div class="sanjay_help">
+						<div class="sanjay_help_item">
+							<i class="fa-solid fa-thumbs-up"></i>
+							<span>Helpful</span>
+						</div>
+						<div class="sanjay_help_item">
+							<i class="fa-solid fa-comment"></i>
+							<span>Comment</span>
+						</div>
+						<div class="sanjay_help_item">
+							<i class="fa-solid fa-share"></i>
+							<span>Share</span>
+						</div>
+					</div>
+				</div>
+				<div class="sanjay">
+					<div class="sanjay_pro">
+						<div class="sanjay_pic">
+							<img src="https://b.zmtcdn.com/web/assets/2267aec184e096c98c46a1565a5563661664945464.png?fit=around%7C100%3A100&crop=100%3A100%3B%2A%2C%2A" alt="">
+							<div class="sanjay_name">
+								<b>Venkata Rajaneni</b>
+								<p>2 reviews . 1 Followers</p>
+							</div>
+						</div>
+						<div class="follow">
+							<a href="#">Follow</a>
+						</div>
+					</div>
+					<div class="sanjay_rate">
+						<span class="krish1">
+							<span>3</span>
+							<span><i class="fa-solid fa-star"></i></span>
+						</span>
+						<span style="margin: 0 10px;">DELIVERY</span>
+						<span style="color: rgb(155,153,153);">an hour ago</span>
+					</div>
+					<div class="sanjay_desc">
+						<p class="san_p">0 Votes for helpful, 0 Comments</p>
+					</div>
+					<div class="sanjay_help">
+						<div class="sanjay_help_item">
+							<i class="fa-solid fa-thumbs-up"></i>
+							<span>Helpful</span>
+						</div>
+						<div class="sanjay_help_item">
+							<i class="fa-solid fa-comment"></i>
+							<span>Comment</span>
+						</div>
+						<div class="sanjay_help_item">
+							<i class="fa-solid fa-share"></i>
+							<span>Share</span>
+						</div>
+					</div>
+				</div>
+				<div class="sanjay">
+					<div class="sanjay_pro">
+						<div class="sanjay_pic">
+							<img src="https://b.zmtcdn.com/web/assets/2267aec184e096c98c46a1565a5563661664945464.png?fit=around%7C100%3A100&crop=100%3A100%3B%2A%2C%2A" alt="">
+							<div class="sanjay_name">
+								<b>Naveen Gade</b>
+								<p>2 reviews . 0 Followers</p>
+							</div>
+						</div>
+						<div class="follow">
+							<a href="#">Follow</a>
+						</div>
+					</div>
+					<div class="sanjay_rate">
+						<span class="krish1">
+							<span>2</span>
+							<span><i class="fa-solid fa-star"></i></span>
+						</span>
+						<span style="margin: 0 10px;">DELIVERY</span>
+						<span style="color: rgb(155,153,153);">15 hours ago</span>
+					</div>
+					<div class="sanjay_desc">
+						<p style="color: rgb(111, 110, 110);">i know Kritunga taste it's superb taste but which i have received very taste less food.</p>
+						<p class="san_p">0 Votes for helpful, 0 Comments</p>
+					</div>
+					<div class="sanjay_help">
+						<div class="sanjay_help_item">
+							<i class="fa-solid fa-thumbs-up"></i>
+							<span>Helpful</span>
+						</div>
+						<div class="sanjay_help_item">
+							<i class="fa-solid fa-comment"></i>
+							<span>Comment</span>
+						</div>
+						<div class="sanjay_help_item">
+							<i class="fa-solid fa-share"></i>
+							<span>Share</span>
+						</div>
+					</div>
+				</div>
+				<div class="sanjay">
+					<div class="sanjay_pro">
+						<div class="sanjay_pic">
+							<img src="https://b.zmtcdn.com/web/assets/2267aec184e096c98c46a1565a5563661664945464.png?fit=around%7C100%3A100&crop=100%3A100%3B%2A%2C%2A" alt="">
+							<div class="sanjay_name">
+								<b>Sandya Rani</b>
+								<p>1 reviews . 0 Followers</p>
+							</div>
+						</div>
+						<div class="follow">
+							<a href="#">Follow</a>
+						</div>
+					</div>
+					<div class="sanjay_rate">
+						<span class="krish1">
+							<span>3</span>
+							<span><i class="fa-solid fa-star"></i></span>
+						</span>
+						<span style="margin: 0 10px;">DELIVERY</span>
+						<span style="color: rgb(155,153,153);">17 hours ago</span>
+					</div>
+					<div class="sanjay_desc">
+						<p style="color: rgb(111, 110, 110);">no spicy</p>
+						<p class="san_p">0 Votes for helpful, 0 Comments</p>
+					</div>
+					<div class="sanjay_help">
+						<div class="sanjay_help_item">
+							<i class="fa-solid fa-thumbs-up"></i>
+							<span>Helpful</span>
+						</div>
+						<div class="sanjay_help_item">
+							<i class="fa-solid fa-comment"></i>
+							<span>Comment</span>
+						</div>
+						<div class="sanjay_help_item">
+							<i class="fa-solid fa-share"></i>
+							<span>Share</span>
+						</div>
+					</div>
+				</div>
+				<div class="sanjay">
+					<div class="sanjay_pro">
+						<div class="sanjay_pic">
+							<img src="https://b.zmtcdn.com/web/assets/2267aec184e096c98c46a1565a5563661664945464.png?fit=around%7C100%3A100&crop=100%3A100%3B%2A%2C%2A" alt="">
+							<div class="sanjay_name">
+								<b>Navaya salla</b>
+								<p>1 reviews . 0 Followers</p>
+							</div>
+						</div>
+						<div class="follow">
+							<a href="#">Follow</a>
+						</div>
+					</div>
+					<div class="sanjay_rate">
+						<span class="krish1">
+							<span>2</span>
+							<span><i class="fa-solid fa-star"></i></span>
+						</span>
+						<span style="margin: 0 10px;">DELIVERY</span>
+						<span style="color: rgb(155,153,153);">17 hours ago</span>
+					</div>
+					<div class="sanjay_desc">
+						<p class="san_p">0 Votes for helpful, 0 Comments</p>
+					</div>
+					<div class="sanjay_help">
+						<div class="sanjay_help_item">
+							<i class="fa-solid fa-thumbs-up"></i>
+							<span>Helpful</span>
+						</div>
+						<div class="sanjay_help_item">
+							<i class="fa-solid fa-comment"></i>
+							<span>Comment</span>
+						</div>
+						<div class="sanjay_help_item">
+							<i class="fa-solid fa-share"></i>
+							<span>Share</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--reviews section ends-->
+
+		<!--photos section starts-->
+		<div id="photos">
+			<div class="section-8">
+			    <h2>Kritunga Restaurant Photos</h2>
+			</div>
+			<div class="photos_btns" id="photos_btns">
+				<div class="photo_button" onclick="allitems()">
+					<a href="#photos_btns">All(15)</a>
+				</div>
+				<div class="photo_button" onclick="food()">
+					<a href="#photos_btns">Food(10)</a>
+				</div>
+				<div class="photo_button" onclick="ambience()">
+					<a href="#photos_btns">Ambience(5)</a>
+				</div>
+			</div>
+			<div id="allitems">
+				<img src="https://b.zmtcdn.com/data/pictures/chains/8/90148/5fdd6618d94b6db37dcd17fed3d69db3.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A" alt="">
+				<img src="https://b.zmtcdn.com/data/pictures/chains/8/90148/18a9857861467119d0cfc9d0884ec044.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A" alt="">
+				<img src="https://b.zmtcdn.com/data/pictures/chains/8/90148/e00b48c651bee99a1c43b1a5b7ecdfca.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A" alt="">
+				<img src="https://b.zmtcdn.com/data/pictures/chains/8/90148/415123a5ebd436a3236a609a61cac43b.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A" alt="">
+				<img src="https://b.zmtcdn.com/data/pictures/chains/8/90148/585961b95afe04fc7fc3b8ee969e87cf.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A" alt="">
+				<img src="https://b.zmtcdn.com/data/pictures/chains/8/90148/966a18dd2a96cd04c8917b7c92f7ca3b.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A" alt="">
+				<img src="https://b.zmtcdn.com/data/pictures/chains/8/90148/5fa8afd671ca42b6a4ddde43af24aefc.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A" alt="">
+				<img src="https://b.zmtcdn.com/data/pictures/chains/8/90148/8cf8d5cf7a2bf9f9da9d2770c46dfb4b.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A" alt="">
+				<img src="https://b.zmtcdn.com/data/pictures/chains/8/90148/324d27f854e758089e37518d6dd5867c.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A" alt="">
+				<img src="https://b.zmtcdn.com/data/pictures/chains/8/90148/53039a4a9cd2a389588f992ed376f823.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A" alt="">
+				<img src="https://b.zmtcdn.com/data/reviews_photos/67b/caefe877c48c3676e06355d5858c867b_1528097248.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A" alt="">
+				<img src="https://b.zmtcdn.com/data/reviews_photos/0de/754e8ac75360616b0d03d4b2f3b9d0de_1528097247.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A" alt="">
+				<img src="https://b.zmtcdn.com/data/reviews_photos/4c6/27da78a871f4e41078e3f9f4b66cc4c6_1528097245.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A" alt="">
+				<img src="https://b.zmtcdn.com/data/reviews_photos/9b1/3d81ed5f0873448fd60b09351c6419b1_1528097253.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A" alt="">
+				<img src="https://b.zmtcdn.com/data/reviews_photos/8ef/682d441bc4886199c4724502773ab8ef_1528097246.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A" alt="">
+			</div>
+			<div id="food">
+				<img src="https://b.zmtcdn.com/data/pictures/chains/8/90148/5fdd6618d94b6db37dcd17fed3d69db3.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A" alt="">
+				<img src="https://b.zmtcdn.com/data/pictures/chains/8/90148/18a9857861467119d0cfc9d0884ec044.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A" alt="">
+				<img src="https://b.zmtcdn.com/data/pictures/chains/8/90148/e00b48c651bee99a1c43b1a5b7ecdfca.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A" alt="">
+				<img src="https://b.zmtcdn.com/data/pictures/chains/8/90148/415123a5ebd436a3236a609a61cac43b.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A" alt="">
+				<img src="https://b.zmtcdn.com/data/pictures/chains/8/90148/585961b95afe04fc7fc3b8ee969e87cf.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A" alt="">
+				<img src="https://b.zmtcdn.com/data/pictures/chains/8/90148/966a18dd2a96cd04c8917b7c92f7ca3b.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A" alt="">
+				<img src="https://b.zmtcdn.com/data/pictures/chains/8/90148/5fa8afd671ca42b6a4ddde43af24aefc.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A" alt="">
+				<img src="https://b.zmtcdn.com/data/pictures/chains/8/90148/8cf8d5cf7a2bf9f9da9d2770c46dfb4b.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A" alt="">
+				<img src="https://b.zmtcdn.com/data/pictures/chains/8/90148/324d27f854e758089e37518d6dd5867c.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A" alt="">
+				<img src="https://b.zmtcdn.com/data/pictures/chains/8/90148/53039a4a9cd2a389588f992ed376f823.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A" alt="">
+			</div>
+			<div id="ambience">
+				<img src="https://b.zmtcdn.com/data/reviews_photos/67b/caefe877c48c3676e06355d5858c867b_1528097248.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A" alt="">
+				<img src="https://b.zmtcdn.com/data/reviews_photos/0de/754e8ac75360616b0d03d4b2f3b9d0de_1528097247.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A" alt="">
+				<img src="https://b.zmtcdn.com/data/reviews_photos/4c6/27da78a871f4e41078e3f9f4b66cc4c6_1528097245.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A" alt="">
+				<img src="https://b.zmtcdn.com/data/reviews_photos/9b1/3d81ed5f0873448fd60b09351c6419b1_1528097253.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A" alt="">
+				<img src="https://b.zmtcdn.com/data/reviews_photos/8ef/682d441bc4886199c4724502773ab8ef_1528097246.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A" alt="">
+			</div>
+		</div>
+		<!--photos section ends-->
+
+		<!--menu section starts-->
+        <div id="krit_menu">
+			<div class="section-9">
+				<h2>Kritunga Restaurant Menu</h2>
+				<div class="menu_pic">
+					<a href="https://b.zmtcdn.com/data/menus/148/90148/c43779f93b846f5bbdf25678cfd46d01.jpg"
+						target="_blank">
+						<img src="https://b.zmtcdn.com/data/menus/148/90148/0bcd1489d157a2fa4923f9f77d41a45b.jpg"
+							alt="">
+					</a>
+					<a href="https://b.zmtcdn.com/data/menus/148/90148/c483aa32959817b7a1d81a772b4a98c7.jpg"
+						target="_blank">
+						<img src="https://b.zmtcdn.com/data/menus/148/90148/c483aa32959817b7a1d81a772b4a98c7.jpg"
+							alt="">
+					</a>
+					<a href="https://b.zmtcdn.com/data/menus/148/90148/c43779f93b846f5bbdf25678cfd46d01.jpg"
+						target="_blank">
+						<img src="https://b.zmtcdn.com/data/menus/148/90148/c43779f93b846f5bbdf25678cfd46d01.jpg"
+							alt="">
+					</a>
+				</div>
+				<div class="food_menu">
+					<h4>Food Menu</h4>
+					<p>3 pages</p>
+				</div>
+			</div>
+		</div>
+		<!--menu section ends-->
+
+		<!--section-5 related starts-->
+		<div class="section-5">
+			<div class="section-5_item">
+				<div class="section-5_heading">
+					<h3>RELATED TO KRITUNGA RESTAURANT, KUKATPALLY</h3>
+				</div>
+				<div class="section-5_desc">
+					<span>Restaurants in PNR Empire, </span>
+					<span>Restaurants in Hyderabad, </span>
+					<span>Hyderabad Restaurants, </span>
+					<span>Kukatpally restaurants, </span>
+					<span>Best Kukatpally restaurants, </span>
+					<span>Hyderabad City restaurants, </span>
+					<span>Casual Dining in Hyderabad, </span>
+					<span>Casual Dining near me, </span>
+					<span>Casual Dining in Hyderabad City, </span>
+					<span>Casual Dining in Kukatpally, </span>
+					<span>in Hyderabad, </span>
+					<span>near me, </span>
+					<span>in Hyderabad City, </span>
+					<span>in Kukatpally, </span>
+					<span>in Hyderabad, </span>
+					<span>near me, </span>
+					<span>in Hyderabad City, </span>
+					<span>in Kukatpally, </span>
+					<span>Kritunga Restaurant Menu, </span>
+					<span>Order Food Online in Kukatpally, </span>
+					<span>Order Food Online in Hyderabad, </span>
+					<span>Order Food Online in Hyderabad City, </span>
+					<span>New Year Parties in Hyderabad, </span>
+					<span>Christmas' Specials in Hyderabad</span>
+				</div>
+			</div>
+			<div class="section-5_item">
+				<div class="section-5_heading">
+					<h3>RESTAURANTS AROUND KUKATPALLY</h3>
+				</div>
+				<div class="section-5_desc">
+					<span>Nizampet restaurants, </span>
+					<span>Moosapet restaurants, </span>
+					<span>Kothaguda restaurants, </span>
+					<span>Miyapur restaurants, </span>
+				</div>
+			</div>
+			<div class="section-5_item">
+				<div class="section-5_heading">
+					<h3>FREQUENT SEARCHES LEADING TO THIS PAGE</h3>
+				</div>
+				<div class="section-5_desc">
+					<span>Kritunga restuarant Kukatpally, </span>
+					<span>Kritunga Kukatpallt, </span>
+					<span>Kritunga restaurant near me, </span>
+					<span>order biryani at kritunga kphb, </span>
+					<span>indian restaurant</span>
+				</div>
+			</div>
+			<div class="section-5_item">
+				<div class="section-5_heading">
+					<h3>TOP STORES</h3>
+				</div>
+				<div class="section-5_desc">
+					<span>Panjagutta, </span>
+					<span>Kothapet, </span>
+				</div>
+			</div>
+		</div>
+		<!--section-5 ends-->
+
+		<!-- section- starts  Footer -->
+		<section class="footer-bar">
+			<div class="footer_container">
+				<div class="footer-lang">
+					<img class="footer-logo" src="images/zomato-black-logo.webp">
+					<div class="btn-lang-top">
+						<a class="lang-btn" href="#"><img src="images/india-flag.jpg" height="13px"> India <small><i
+									class="fa fa-chevron-down"></i></small></a>
+						<a class="lang-btn" href="#"> <i class="fa fa-globe"></i> English <small><i
+									class="fa fa-chevron-down"></i></small></a>
+					</div>
+				</div>
+				<div class="footer-last-links">
+					<ul>
+						<h4 class="footer-list-title">ABOUT ZOMATO</h4>
+						<a href="#" id="anchor">Who We Are</a>
+						<a href="#" id="anchor">Blog</a>
+						<a href="#" id="anchor">Woek With Us</a>
+						<a href="#" id="anchor">Investor Relations</a>
+						<a href="#" id="anchor">Report Fraud</a>
+						<a href="#" id="anchor">Contact Us</a>
+					</ul>
+					<ul>
+						<h4 class="footer-list-title">ZOMAVERSE</h4>
+						<a href="#" id="anchor">Zomato</a>
+						<a href="#" id="anchor">Blinkit</a>
+						<a href="#" id="anchor">Feeding India</a>
+						<a href="#" id="anchor">Hyperpure</a>
+						<a href="#" id="anchor">Zomaland</a>
+					</ul>
+					<ul>
+						<h4 class="footer-list-title">FOR RESTAURANTS</h4>
+						<a href="#" id="anchor">Add Restaurant</a>
+						<a href="#" id="anchor">Partner With Us</a>
+						<a href="#" id="anchor">Apps For You</a>
+						<a href="#" id="anchor">Zomato For Work</a>
+						<a href="#" id="anchor">Product Businesses</a>
+					</ul>
+					<ul>
+						<h4 class="footer-list-title">LEARN MORE</h4>
+						<a href="#" id="anchor">Privacy</a>
+						<a href="#" id="anchor">Security</a>
+						<a href="#" id="anchor">Terms</a>
+						<a href="#" id="anchor">Sitemap</a>
+					</ul>
+					<div>
+						<h4 class="footer-list-title">SOCIAL LINKS</h4>
+						<div class="footer-social-icons">
+							<a href="#"><i class="fab fa-linkedin"></i></a>
+							<a href="#"><i class="fab fa-instagram"></i></a>
+							<a href="#"><i class="fab fa-twitter"></i></a>
+							<a href="#"><i class="fab fa-youtube"></i></a>
+							<a href="#"><i class="fab fa-facebook"></i></a>
+						</div>
+						<img src="images/app-store1.webp" width="137px">
+						<img src="images/app-store2.webp" width="137px">
+					</div>
+				</div>
+				<div class="footer-copyright">
+					<p><small>By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy
+							Policy and Content Policies. All trademarks are properties of their respective owners.
+							2008-2022 © Zomato™ Ltd. All rights reserved.</small></p>
+				</div>
+			</div>
+		</section>
+		<!-- section- ends  Footer -->
+
+	</div>
+	<!-- mini navbar and mini page -->
+	<div id="mini-page">
+		<nav id="navbar2">
+			<div class="container-fluid">
+				<span onclick="Close()">
+					<h2 style="cursor: pointer; margin-top:10px; margin-left:5px;">&#10006;</h2>
+				</span>
+				<img src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png" tabindex="0"
+					class="sc-yvzia9-6 sc-yvzia9-7 fvCyAU" id="img-logo" />
+			</div>
+		</nav>
+
+		<ul>
+
+			<li class="mini-restaurant"><a href="#">
+					<span>Log in</span>
+				</a>
+			</li>
+			<li class="mini-restaurant"><a href="#">
+					<span>Sign up</span>
+				</a>
+			</li>
+			<li class="mini-restaurant"><a href="#">
+				<span>Cart page</span>
+			</a></li>
+		</ul>
+
+	</div>
+	<script src="restorent1.js"></script>
+</body>
+
+</html>

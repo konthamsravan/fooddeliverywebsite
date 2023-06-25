@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>search-bar</title>
+    <style>
+        #container{
+            height: 400px;
+            width: 400px;
+            border: 1px solid;
+        }
+        #search{
+           margin-top: 20px;
+        }
+        #matter{
+            display: none;
+        }
+    </style>
+</head>
+<body onclick="web()">
+    <center>
+        <div id="container">
+            <form>
+                 <input type="search" placeholder="search" onkeypress="box()" id="search">
+           </form>
+        <div id="matter">
+           <div id="list" >
+                <h3>sravan</h3>
+           </div>
+
+           <div id="list">
+              <h3>anil</h3>
+           </div>
+
+            <div id="list">
+               <h3>sheaker</h3>
+            </div>
+
+            <div id="list">
+               <h3>rakesh</h3>
+            </div>
+          </div>
+       </div>
+    </center>
+    <script>
+
+         function box(){
+           var search = document.getElementById('search').value.toUpperCase();
+           var list = document.querySelectorAll('#list');
+           var name =  document.getElementsByTagName('h3');
+           var matter= document.getElementById('matter');
+
+          
+           
+           for(var i=0;i<name.length;i++){
+              var match=list[i].getElementsByTagName('h3')[0]
+              if(match){
+                text=match.textContent
+                if(text.toUpperCase().indexOf(search)>-1){
+                    list[i].style.display=''
+                    matter.style.display='block' ;
+                }
+                else{
+                    list[i].style.display='none'
+                }
+              }
+           }
+        
+         }
+         function web(){
+            var matter =document.getElementById('matter');
+            matter.style.display='none'
+         }
+
+
+    </script>
+    
+</body>
+</html>

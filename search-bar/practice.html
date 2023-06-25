@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <a href="images.html"><button>cart</button></a>
+       <div id="main">
+        <div>
+          <img src="https://b.zmtcdn.com/data/pictures/chains/0/93970/ff2a033de7e1e643935b8899a1e2b42e_o2_featured_v2.jpg?output-format=webp"  alt="loading" width="200px" height="200px" />
+          <h3>this is india flag</h3>
+          <p>400</p>
+          <button id="add">add</button>
+        </div>
+        
+        <div >
+          <img src="option.png" alt="loading" width="200px" height="200px"/>
+          <h3>this is option icon</h3>
+          <p>500</p>
+          <button id="add">add</button>
+        </div>
+      </div>
+ 
+
+    <script>
+       var id=0;
+       var btn=document.querySelectorAll("#add");
+       btn.forEach((btn1)=>{
+        btn1.addEventListener("click",addfunction)
+       })
+      
+       const items=[];
+       function addfunction(e){
+        var img=e.target.parentElement.children[0].src;
+        var content=e.target.parentElement.children[1].textContent;
+        img=img.replace("http://127.0.0.1:5500/",'');
+        var rupees=e.target.parentElement.children[2].textContent;
+        console.log(rupees)
+        id=id+1;
+        
+       
+       items.push(
+          {
+          id:id,
+          img:img,
+          cont:content,
+          rs:rupees
+         }
+        )
+
+        localStorage.setItem("images",JSON.stringify(items))
+        
+       
+       }
+      
+       
+
+     
+
+
+
+     /**
+     var img = document.querySelectorAll("img");
+     console.log(img.length)
+
+     var cartItems={};
+      var items=[];
+      cartItems.items=items;
+        
+     for(var i=0;i<img.length;i++){
+     
+       var items={
+            "image":img[i].src
+        }
+         cartItems.items.push(items)
+         localStorage.setItem("images",JSON.stringify(cartItems))
+    }
+    **/
+
+    /*
+     <div class="card-wrapper">
+        <div data-id="1" class="card-item">3
+          <img src="\img\pic1.jpeg" />
+          <div class="details">2
+            <h3>Item Name</h3>
+            <p> 1
+              <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+
+              <span class="price">Price: $23.44</span>
+              <span class="add-to-cart-btn">Add To Cart</span>
+            </p>
+          </div>
+        </div>
+
+        ---------------------------------
+
+        const addToCartBtns = document.querySelectorAll('.add-to-cart-btn')
+        addToCartBtns.forEach( (btn)=>{
+        btn.addEventListener('click', addItemFunction)
+         }  )
+
+function addItemFunction(e){
+    const id = e.target.parentElement.parentElement.parentElement.getAttribute("data-id")
+    const img = e.target.parentElement.parentElement.previousElementSibling.src
+    const name = e.target.parentElement.previousElementSibling.textContent
+    const desc = e.target.parentElement.children[0].textContent
+    let price = e.target.parentElement.children[1].textContent
+    price = price.replace("Price: $", '')
+    const item = new CartItem(name, desc, img, price)
+    LocalCart.addItemToLocalCart(id, item)
+ console.log(price)
+}  
+
+
+    */
+    
+      
+      
+                  
+        
+    </script>
+</body>
+</html>

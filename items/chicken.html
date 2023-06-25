@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chicken-Biryani</title>
+    <!-- icon -->
+    <link rel="icon" href="https://data1.ibtimes.co.in/cache-img-0-450/en/full/657536/1539438235_zomato.png">
+   <script src="chicken.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="chicken.css"/>
+</head>
+<body onresize="Clickme()">
+<div id="main-block"  onclick="searchrelation()">
+    <!---section-1-->
+    <div class="container"><!--block-1-->
+        <div id="header">
+            <img src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png" tabindex="0" class="sc-yvzia9-6 sc-yvzia9-7 fvCyAU" height=30px style="margin-top: 20px;"/><!--logo-->
+            <div class="search-container">
+                <div class="detect-location">
+                   <!--font awesome icons-->
+                   <i class="fa-solid fa-location-dot location-map"></i>
+                   <input type="text" placeholder="Hyderabad">
+                   <i class="fa-sharp fa-solid fa-caret-down caret-down" id="detectdown" onclick="detectd()"></i>
+				   <i class="fa-sharp fa-solid fa-caret-up" id="detectup" onclick="detectu()"></i>
+                </div>   
+                <div class="line">|</div>
+                <div class="search-item">
+                   <i class="fa-solid fa-magnifying-glass"></i>
+                   <input type="text" placeholder="Search for restaurant, cuisine or a dish" onkeypress="search()" id="search-content">
+                </div>
+            </div>
+            <p id="login" onclick="log()"><a href="#" id="anchor1">Login</a></p>
+            <p id="signup" onclick="sing()"><a href="#" id="anchor1">Sign up</a></p>
+        </div>
+    </div>  
+
+	<!---detect-box-->
+	<div class="container">
+		<div id="detect-box">
+			
+					<i class="fa-solid fa-location-crosshairs" id="detect-icon"></i>
+				   
+				    <p id="detect-location">Detect current location</p>
+				    <p id="detect-para">Using GPS</p>
+               
+		</div>
+	</div>
+	<!--detect-box-ends--->
+	
+	
+
+	<!--search-box-->
+	<div class="container">
+		<div id="search-box">
+				
+				   <div id="dish">
+					<a href="chicken.html" id="dish1">
+					   <img alt="Dish" src="https://b.zmtcdn.com/data/o2_assets/d6dd4d606ac5c05f1b83875137c5fb6f1648972318.png" height="60px" width="60px" id="search-img">
+					   <div id="first-line"><h3>Chicken-Biryani</h3>
+						<p id="last-line">Dish</p> 
+					   </div>  
+					   
+					</a>
+					</div>
+	
+					<div id="dish">
+						<a href="mutton.html" id="dish1">
+						   <img alt="Dish" src="https://b.zmtcdn.com/data/o2_assets/bedfaee28839d61014ead129e351e6301632129487.png"  height="60px" width="60px" id="search-img">
+						   <div id="first-line"> <h3>Mutton-Biryani</h3>
+							<p id="last-line">Dish</p> 
+						   </div> 
+						  
+						</a>
+					</div>
+	
+					<div id="dish">
+						<a href="veg.html" id="dish1">
+						   <img alt="Dish" src="https://b.zmtcdn.com/data/dish_images/22d0c3984b38939dce003a30cf07a6a01639737617.png" height="60px" width="60px" id="search-img">
+						   <div id="first-line"> <h3>Veg-Biryani</h3>
+							<p id="last-line">Dish</p> 
+						   </div> 
+						   
+						</a>
+					</div>
+	
+					<div id="dish">
+						<a href="burger.html" id="dish1">
+						   <img alt="Dish" src="https://b.zmtcdn.com/data/images/cuisines/unlabelled/ec3d97ea41008822b616e9103901e5e1.jpeg" height="60px" width="60px" style="border-radius: 10px;" id="search-img">
+						   <div id="first-line" style="margin-top: -5px;"> <h3>Burger</h3>
+							<p id="last-line">Dish</p> 
+						   </div> 
+						   
+						</a> 
+					</div>
+	
+					<div id="dish">
+						<a href="pizza.html" id="dish1">
+						   <img alt="Dish" src="https://b.zmtcdn.com/data/images/cuisines/unlabelled/9778d5d219c5080b9a6a17bef029331c.jpg"  height="60px" width="60px" style="border-radius: 10px;" id="search-img">
+						  
+						   <div id="first-line" style="margin-top: -5px;"> <h3>Pizza</h3>
+							<p id="last-line">Dish</p> 
+						   </div> 
+						  
+						</a> 
+					</div>
+	
+					<div id="dish" >
+						<a href="sandwich.html" id="dish1">
+						   <img alt="Dish" src="https://b.zmtcdn.com/data/dish_images/0a6da356b172d86850baabe3d1a0d4831631178607.png" height="60px" width="60px" id="search-img">
+						   <div id="first-line" > <h3>Sandwich</h3>
+							<p id="last-line">Dish</p> 
+						   </div>  
+						  
+						</a> 
+					</div>
+							  
+			  
+	
+		</div>
+	 </div>
+	
+	<!---search-box-end-->
+
+	
+	
+
+
+        <nav  id="navbar2"><!---mini navbar-->
+            <div class="container-fluid">
+               <span onclick="toggle()"><h2 style="cursor: pointer;">&#x2630;</h2></span>
+               <img src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png" tabindex="0" class="sc-yvzia9-6 sc-yvzia9-7 fvCyAU" height=30px id="img-logo"/><!--logo-->
+               </button>
+           </div>
+         </nav>
+
+
+
+    <div class="container">
+        <p id="line">Home<span style="color:rgb(199, 196, 196); ">&nbsp;&nbsp;/</span> &nbsp;&nbsp; India&nbsp;&nbsp;  <span style="color:rgb(199, 196, 196);">/</span> &nbsp;&nbsp; <span style=" color: rgb(199, 196, 196);font-size: small;">Hyderabad Restaurants</span></p>
+    </div>
+    
+     <div class="container" >
+        <div style="display:flex;flex-direction: row; overflow-x: auto; scrollbar-width: none; overflow-y: hidden;-ms-overflow-style: none;">
+
+        
+            <div id="scooty">
+            <img alt="illustration" src="https://b.zmtcdn.com/data/o2_assets/c0bb85d3a6347b2ec070a8db694588261616149578.png?output-format=webp"  loading="lazy" class="sc-s1isp7-5 jQwYOW" height="30px" id="icon">
+            </div><span id="icon-content">Delivery</span>
+
+            
+            
+
+            <div id="dinner">
+                <img alt="illustration" src="https://b.zmtcdn.com/data/o2_assets/78d25215ff4c1299578ed36eefd5f39d1616149985.png" loading="lazy" class="sc-s1isp7-5 jQwYOW" height="30px" id="icon" >
+            </div><span id="icon-content">Dinning Out</span>
+           
+
+        
+            <div id="bar">
+                <img alt="illustration" src="https://b.zmtcdn.com/data/o2_assets/01040767e4943c398e38e3592bb1ba8a1616150142.png?output-format=webp" loading="lazy" class="sc-s1isp7-5 jQwYOW" height="30px" id="icon">
+            </div><span id="icon-content">Nightlife</span>
+           
+        </div>
+
+
+
+     </div><hr>
+     <!---section-2-ends-->
+
+
+
+    <div class="container"><!--block 2 rating rows-->
+        <div style="display: flex;flex-direction:row ; overflow-x: auto; scrollbar-width: none; overflow-y: hidden;-ms-overflow-style: none;">
+            <button id="btn-1"><img src="option.png" alt="#" height="15px" width="18px"/>Filters</button>
+            <button id="btn-1" style="background-color: rgb(215, 63, 88) ; color: white;">Biryani *<i class="fa-solid fa-chevron-down"></i>  </button>
+            <button id="btn-1"> &#8645; Delivery Time</button>
+            <button id="btn-1">Ratings: 4.0+</button>
+            
+			<button id="btn-1">More filters&nbsp;&nbsp; <i class="fa-solid fa-chevron-down"></i> </button>
+        </div>
+    </div>
+
+    <!----Delivery-page-->
+
+    
+
+		
+
+	<div class="container"><!---cards-page-start--->
+
+		<h1>Biryani Delivery Restaurants in Kphb</h1>
+
+		<div id="card-container"> <!---card-container-1-->
+            
+		<a href="restorent1.html">
+			<div id="card-border"> <!---card-1--->
+                
+				<img alt="Restaurant Card" src="https://b.zmtcdn.com/data/pictures/chains/0/93970/ff2a033de7e1e643935b8899a1e2b42e_o2_featured_v2.jpg?output-format=webp" loading="lazy" class="sc-s1isp7-5 fyZwWD" id="img1">
+				<div id="content-border">
+                     <span id="discount">50% Off up to 100</span>   
+				</div>
+				<div id="time-border">
+					<span id="time">25 min</span>
+				</div>
+				<h4 id="restaurent-name">Kritunga Restaurant</h4>
+				<div id="rating-border">
+					<span id="rate">3.7 &#10032;</span>
+				</div>
+				<p id="state">North Indian, Mughlai,che..</p>
+                <p id="rupees">₹ 250 for one</p>
+				
+				<div id="bottom-border"></div>
+				<img alt="image" src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp" loading="lazy" class="sc-s1isp7-5 fyZwWD" id="img2">
+				<div id="icon-border">
+					<i class="fa-solid fa-arrow-trend-up" style="color: white;font-size: x-small;"></i>
+				</div>
+				</a>
+			</div>
+		</a>
+
+		<a href="restorent1.html">
+
+			<div id="card-border"> <!---card-2--->
+                
+				<img alt="Restaurant Card" src="https://b.zmtcdn.com/data/dish_photos/824/9b3d29287c67aaa667d90157b2dff824.jpg?output-format=webp"  loading="lazy" class="sc-s1isp7-5 fyZwWD" id="img1">
+				<div id="content-border">
+                     <span id="discount">50% Off up to 100</span>   
+				</div>
+				<div id="time-border">
+					<span id="time">25 min</span>
+				</div>
+				<h4 id="restaurent-name">Meghana's Biryani</h4>
+				<div id="rating-border">
+					<span id="rate">3.7 &#10032;</span>
+				</div>
+				<p id="state">Biryani,Kebab,Andhra</p>
+                <p id="rupees">for one ₹ 250</p>
+			
+				<div id="bottom-border"></div>
+				<img alt="image" src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp" loading="lazy" class="sc-s1isp7-5 fyZwWD" id="img2">
+				<div id="icon-border">
+					<i class="fa-solid fa-arrow-trend-up" style="color: white;font-size: x-small;"></i>
+				</div>
+
+			</div>
+		</a>
+
+          <a href="restorent1.html">
+			<div id="card-border"> <!---card-3--->
+                
+				<img alt="Restaurant Card" src="https://b.zmtcdn.com/data/pictures/chains/2/91662/0184215797f07b24d6f25621beaa38bb_o2_featured_v2.jpg?output-format=webp" loading="lazy" class="sc-s1isp7-5 fyZwWD" id="img1">
+				<div id="content-border">
+                     <span id="discount">50% Off up to 100</span>   
+				</div>
+				<div id="time-border">
+					<span id="time">25 min</span>
+				</div>
+				<h4 id="restaurent-name">Bahar Biryani Cafe</h4>
+				<div id="rating-border">
+					<span id="rate">3.7 &#10032;</span>
+				</div>
+				<p id="state">Biryanis,North Indian,chi</p>
+                <p id="rupees"> for one ₹ 250</p>
+				
+				<div id="bottom-border"></div>
+				<img alt="image" src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp" loading="lazy" class="sc-s1isp7-5 fyZwWD" id="img2">
+				<div id="icon-border">
+					<i class="fa-solid fa-arrow-trend-up" style="color: white;font-size: x-small;"></i>
+				</div>
+
+			</div>
+		  </a>
+
+		</div>
+
+
+		<div id="card-container"> <!---card-container-2-->
+
+			<a href="restorent1.html">
+
+			<div id="card-border"> <!---card-1--->
+                
+				<img alt="Restaurant Card" src="https://b.zmtcdn.com/data/pictures/2/20216332/ca5393ed3c2e227e5947b13935efe893.jpg?fit=around|771.75:416.25&crop=771.75:416.25;*,*" loading="lazy" class="sc-s1isp7-5 fyZwWD" id="img1">
+				<div id="content-border">
+                     <span id="discount">50% Off up to 100</span>   
+				</div>
+				<div id="time-border">
+					<span id="time">25 min</span>
+				</div>
+				<h4 id="restaurent-name">Shree Santhosh Family Dhaba</h4>
+				<div id="rating-border">
+					<span id="rate">3.7 &#10032;</span>
+				</div>
+				<p id="state">North Indian,Biryani,chi..</p>
+                <p id="rupees">for one ₹ 250</p>
+				
+				<div id="bottom-border"></div>
+				<img alt="image" src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp" loading="lazy" class="sc-s1isp7-5 fyZwWD" id="img2">
+				<div id="icon-border">
+					<i class="fa-solid fa-arrow-trend-up" style="color: white;font-size: x-small;"></i>
+				</div>
+
+			</div>
+		</a>
+        
+		<a href="restorent1.html">
+			<div id="card-border"> <!---card-2--->
+                
+				<img alt="Restaurant Card" src="https://b.zmtcdn.com/data/pictures/2/20216332/56ed24c2a43a10069e50784c6b4955ae_o2_featured_v2.jpg?output-format=webp" loading="lazy" class="sc-s1isp7-5 fyZwWD" id="img1">
+				<div id="content-border">
+                     <span id="discount">50% Off up to 100</span>   
+				</div>
+				<div id="time-border">
+					<span id="time">25 min</span>
+				</div>
+				<h4 id="restaurent-name">AI-Saba Hotel</h4>
+				<div id="rating-border">
+					<span id="rate">3.7 &#10032;</span>
+				</div>
+				<p id="state">Biryani</p>
+                <p id="rupees">for one ₹ 250</p>
+				
+				<div id="bottom-border"></div>
+				<img alt="image" src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp" loading="lazy" class="sc-s1isp7-5 fyZwWD" id="img2">
+				<div id="icon-border">
+					<i class="fa-solid fa-arrow-trend-up" style="color: white;font-size: x-small;"></i>
+				</div>
+
+			</div>
+		</a>
+
+         <a href="restorent1.html">
+			<div id="card-border"> <!---card-3--->
+                <img alt="Restaurant Card" src="https://b.zmtcdn.com/data/pictures/5/92555/a2cde9134c8772c835e0c6c91dd03171_o2_featured_v2.jpg" loading="lazy" class="sc-s1isp7-5 fyZwWD " id="img1">
+				<div id="content-border">
+                     <span id="discount">50% Off up to 100</span>   
+				</div>
+				<div id="time-border">
+					<span id="time">25 min</span>
+				</div>
+				<h4 id="restaurent-name">Pakeeza Kalyani</h4>
+				<div id="rating-border">
+					<span id="rate">3.7 &#10032;</span>
+				</div>
+				
+				<p id="state">Biryani,Mughlai</p>
+                <p id="rupees">for one ₹ 250</p>
+				
+				<div id="bottom-border"></div>
+				<img alt="image" src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp" loading="lazy" class="sc-s1isp7-5 fyZwWD" id="img2">
+				<div id="icon-border">
+					<i class="fa-solid fa-arrow-trend-up" style="color: white;font-size: x-small;"></i>
+				</div>
+
+			</div>
+		</a>
+
+		</div>
+
+		<div id="card-container"> <!---card-container-3-->
+
+			<a href="restorent1.html">
+
+			<div id="card-border"> <!---card-1--->
+                
+				<img alt="Restaurant Card" src="https://b.zmtcdn.com/data/pictures/4/19917664/54778d99d9a20f5d73724971500c89ca_o2_featured_v2.jpg" loading="lazy" class="sc-s1isp7-5 fyZwWD" id="img1">
+				<div id="content-border">
+                     <span id="discount">50% Off up to 100</span>   
+				</div>
+				<div id="time-border">
+					<span id="time">25 min</span>
+				</div>
+				<h4 id="restaurent-name">Red Bucket Biryani</h4>
+				<div id="rating-border">
+					<span id="rate">3.7 &#10032;</span>
+				</div>
+				<p id="state">Biryani</p>
+                <p id="rupees">for one ₹ 250</p>
+				
+				<div id="bottom-border"></div>
+				<img alt="image" src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp" loading="lazy" class="sc-s1isp7-5 fyZwWD" id="img2">
+				<div id="icon-border">
+					<i class="fa-solid fa-arrow-trend-up" style="color: white;font-size: x-small;"></i>
+				</div>
+
+			</div>
+		</a>
+
+          <a href="restorent1.html">
+			<div id="card-border"> <!---card-2--->
+                
+				<img alt="Restaurant Card" src="https://b.zmtcdn.com/data/pictures/4/20070924/20fe6666a65e9169860ba035116d081f_o2_featured_v2.jpg" loading="lazy" class="sc-s1isp7-5 fyZwWD" id="img1">
+				<div id="content-border">
+                     <span id="discount">50% Off up to 100</span>   
+				</div>
+				<div id="time-border">
+					<span id="time">25 min</span>
+				</div>
+				<h4 id="restaurent-name">Begum Biryani</h4>
+				<div id="rating-border">
+					<span id="rate">3.7 &#10032;</span>
+				</div>
+				<p id="state">Biryani</p>
+                <p id="rupees"> for one ₹ 250</p>
+				
+				<div id="bottom-border"></div>
+				<img alt="image" src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp" loading="lazy" class="sc-s1isp7-5 fyZwWD" id="img2">
+				<div id="icon-border">
+					<i class="fa-solid fa-arrow-trend-up" style="color: white;font-size: x-small;"></i>
+				</div>
+
+			</div>
+		</a>
+
+          <a href="restorent1.html">
+			<div id="card-border"> <!---card-3--->
+				<img alt="Restaurant Card" src="https://b.zmtcdn.com/data/pictures/chains/9/90139/dd94d1e83c47ca675d3aa598a6b52ae5_o2_featured_v2.jpg" loading="lazy" class="sc-s1isp7-5 fyZwWD" id="img1">
+				<div id="content-border">
+                     <span id="discount">50% Off up to 100</span>   
+				</div>
+				<div id="time-border">
+					<span id="time">25 min</span>
+				</div>
+				<h4 id="restaurent-name">Hitech Bawarchi Food Zone</h4>
+				<div id="rating-border">
+					<span id="rate">3.7 &#10032;</span>
+				</div>
+				
+				<p id="state">North Indian, chinese,Bir</p>
+                <p id="rupees">for one ₹ 250</p>
+				
+				<div id="bottom-border"></div>
+				<img alt="image" src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp" loading="lazy" class="sc-s1isp7-5 fyZwWD" id="img2">
+				<div id="icon-border">
+					<i class="fa-solid fa-arrow-trend-up" style="color: white;font-size: x-small;"></i>
+				</div>
+
+			</div>
+		</a>
+
+		</div>
+
+
+
+
+
+
+
+
+	</div><!----cards-page-ends----->
+
+  
+	 
+	 
+	 
+	 
+
+
+
+	 
+
+
+
+
+
+
+    <!----Delivery-page--->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--manideepa section-->
+
+    
+   
+	<!-- section-5 starts  Explore -->
+	<section class="container">
+		<div class="explore-title">
+            <h1>Explore other options for you here</h1>
+		</div>
+		<div class="explore_part_1">
+			<div class="explore-title-2">
+				<h2>Popular cuisines near me </h2>
+					<span id="down-arrow" onclick="downarrow()">
+					<i class="fa-solid fa-chevron-up"></i>
+					</span>
+					<span id="up-arrow" onclick="uparrow()">
+					<i class="fa-solid fa-chevron-down"></i>   
+					</span>
+			</div> 
+			<div class="wrap-links food-1" id="food1">
+				<a href="#">Andhra food near me</a>
+				<span class="dot-seperator"></span>
+				<a href="#">Bakery food near me</a>
+				<span class="dot-seperator"></span>
+				<a href="#">Beverages food near me</a>
+				<span class="dot-seperator"></span>
+				<a href="#">Biryani food near me</a>
+				<span class="dot-seperator"></span>
+				<a href="#">Burger food near me</a>
+				<span class="dot-seperator"></span>
+				<a href="#">Chinese food near me</a>
+				<span class="dot-seperator"></span>
+				<a href="#">Desserts food near me</a>
+				<span class="dot-seperator"></span>
+				<a href="#">Ice Cream food near me</a>
+				<span class="dot-seperator"></span>
+				<a href="#">Kebab food near me</a>
+				<span class="dot-seperator"></span>
+				<a href="#">Mughlai food near me</a>
+				<span class="dot-seperator"></span>
+				<a href="#">North Idian food near me</a>
+				<span class="dot-seperator"></span>
+				<a href="#">Pizza food near me</a>
+				<span class="dot-seperator"></span>
+				<a href="#">Sandwich food near me</a>
+				<span class="dot-seperator"></span>
+				<a href="#">Sea food near me</a>
+				<span class="dot-seperator"></span>
+				<a href="#">Shake food near me</a>
+				<span class="dot-seperator"></span>
+				<a href="#">Shawarma food near me</a>
+				<span class="dot-seperator"></span>
+				<a href="#">Sichuan food near me</a>
+				<span class="dot-seperator"></span>
+				<a href="#">South Indian food near me</a>
+				<span class="dot-seperator"></span>
+				<a href="#">Street food near me</a>
+				<span class="dot-seperator"></span>
+				<a href="#">Tea food near me</a>
+			</div>
+		</div>
+		<div class="explore_part_1">
+            <div class="explore-title-2">
+				<h2>Popular restaurant types near me</h2>
+					<span id="down-arrow1" onclick="downarrow1()">
+					<i class="fa-solid fa-chevron-up"></i>
+					</span>
+					<span id="up-arrow1" onclick="uparrow1()">
+					<i class="fa-solid fa-chevron-down"></i>  
+					</span>
+			</div>
+			<div class="wrap-links food-2" id="food2">
+				<a href="#">Bakeries near me</a>
+				<span class="dot-seperator"></span>
+				<a href="#">Bars near me</a>
+				<span class="dot-seperator"></span>
+				<a href="#">Beverage Shops near me</a>
+				<span class="dot-seperator"></span>
+				<a href="#">Bhojanalaya near me</a>
+				<span class="dot-seperator"></span>
+				<a href="#">Cafe`s near me</a>
+				<span class="dot-seperator"></span>
+				<a href="#">Casual Dining near me</a>
+				<span class="dot-seperator"></span>
+				<a href="#">Clubs near me</a>
+				<span class="dot-seperator"></span>
+				<a href="#">Confectioneries near me</a>
+				<span class="dot-seperator"></span>
+				<a href="#">Dessert Parlors near me</a>
+				<span class="dot-seperator"></span>
+				<a href="#">Dhabas near me</a>
+				<span class="dot-seperator"></span>
+				<a href="#">Fine Dining near me</a>
+				<span class="dot-seperator"></span>
+				<a href="#">Food Courts near me</a>
+				<span class="dot-seperator"></span>
+				<a href="#">Food Trucks near me</a>
+				<span class="dot-seperator"></span>
+				<a href="#">Kiosks near me</a>
+				<span class="dot-seperator"></span>
+				<a href="#">Lounges near me</a>
+				<span class="dot-seperator"></span>
+				<a href="#">Microbreweries near me</a>
+				<span class="dot-seperator"></span>
+				<a href="#">Pan Shop near me</a>
+				<span class="dot-seperator"></span>
+				<a href="#">Pubs near me</a>
+				<span class="dot-seperator"></span>
+				<a href="#">Quick Bites near me</a>
+				<span class="dot-seperator"></span>
+				<a href="#">Sweet Shops near me</a>
+			</div>
+		</div>
+		<div class="explore_part_1">
+            <div class="explore-title-2">
+				<h2>Top Restaurant Chains</h2>
+					<span id="down-arrow2" onclick="downarrow2()">
+					<i class="fa-solid fa-chevron-up"></i>
+					</span>
+					<span id="up-arrow2" onclick="uparrow2()">
+					<i class="fa-solid fa-chevron-down"></i> 
+					</span>
+			</div>
+			<div class="restraunt-chains food-3" id="food3">
+				<div>
+					<a href="#">Bikanervala</a>
+				</div>
+				<div>
+					<a href="#">Burger King</a>
+				</div>
+				<div>
+					<a href="#">Burger Singh</a>
+				</div>
+				<div>
+					<a href="#">Domino's</a>
+				</div>
+				<div>
+					<a href="#">Dunkin' Donuts</a>
+				</div>
+				<div>
+                    <a href="#">KFC</a>
+				</div>
+				<div>
+					<a href="#">Krispy Kreme</a>
+				</div>
+				<div>
+					<a href="#">McDonald's</a>
+				</div>
+				<div>
+					<a href="#">Pizza Hut</a>
+				</div>
+				<div>
+					<a href="#">WOW! Momo</a>
+				</div>
+			</div>
+		</div>
+		<div class="explore_part_1">
+			<div class="explore-title-2">
+				<h2>Cities We Deliver To</h2>
+					<span id="down-arrow3" onclick="downarrow3()">
+					<i class="fa-solid fa-chevron-up"></i>
+					</span>
+					<span id="up-arrow3" onclick="uparrow3()">
+					<i class="fa-solid fa-chevron-down"></i>
+					</span>
+			</div>
+			<div class="last-links food-4" id="food4">
+					<a href="#">Delhi NCR</a>
+					<a href="#">Hyderabad</a>
+					<a href="#">Ahmedabad</a>
+					<a href="#">Nashik</a>
+					<a href="#">Pune</a>
+					<a href="#">Amritsar</a>
+					<a href="#">Kolkata</a>
+					<a href="#">Chennai</a>
+					<a href="#">Chandigarh</a>
+					<a href="#">Ooty</a>
+					<a href="#">Kanpur</a>
+				    <a href="#">Vishakapatnam</a>
+                    <a href="#">Mumbai</a>
+				    <a href="#">Lucknow</a>
+				    <a href="#">Goa</a>
+				    <a href="#">Shimla</a>
+				    <a href="#">Allahabad</a>
+				    <a href="#">Agra</a>
+					<a href="#">Bengaluru</a>
+					<a href="#">Kochi</a>
+					<a href="#">Indore</a>
+					<a href="#">Dehradun</a>
+					<a href="#">Coimbatore</a>
+					<a href="#">Pune</a>
+					<a href="#">Jaipur</a>
+					<a href="#">Gangtok</a>
+				    <a href="#">Mysore</a>
+				    <a href="#">Vijayawada</a>
+					<a href="#" class="see_more">See more</a>
+			</div>
+		</div>
+	</section>
+      <!-- section-5 ends-->
+
+      <!--footer-section-->
+      <!-- section-6 starts  Footer -->
+	<section class="footer-bar">
+		<div class="container">
+			<div class="footer-lang">
+				<img class="footer-logo" src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png">
+				<div class="btn-lang-top">
+					<a class="lang-btn" href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAAmVBMVEX/mTMSiAf/////lycAgQAAAIgAAIUAAH4AAIIAAIMAAHwAAHPi4u+kpMvz8/kAAHjn5/Lt7fXd3ey5uddPT6GZmcWDg7n6+v7Ly+HIyOJERJxlZao+PponJ5L29vy0tNbW1uggIJCfn8iGhrsYGJBNTaB2drQQEIx+fripqc5ra62QkMBXV6QiIpFfX6i+vtwyMpw6Opg1NZe0gadDAAAEvUlEQVR4nO3ba3OiSBiG4UzvdDcip8YDiAdQZAIxExP//4/btzHjZH1Nze6HpVPlc1Ul0eiH9g7Q2JKHBwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACA/+gvuPYg4BqacGjCoQmHJhyacF+hSTI5LFd7uV8tD5PE9WDEF2gSHNbaGyklpVRq5Omfh8D1kBw3qaZ6pCiGVFrr/oYc6SZ3OyinTZIpdZCeevnhNyY1jf/jRXm0vejG6S7kssnObhmeNxMbcTSiEuZIt2aeZ7eancNxOWzy7NFrn3cnI/p9pbTfcmFO3ZxaeVN3A3PWJNrS5lAEmb3d5wgvt7KgoMe2kauhuWoSPdK2QHvIwt5ZpPTtQF/p+S7tVbQNPbqK4qhJRluJ17VGZB3di2yPF/o62AxdJkzbUZRt5mZwjpo0lOTY3wrtFGMPHq/vP5N+JxJHiuLomOKmycyTXinOUewLX1IYSTmW7/cpiSjpOTMno3PSJNA049TnQ4gIae8J6cVrSkWbSNdvJvRITbOPdnJO66RJo1QzM3RjaY8YMhLVVmR+JraViGhzEZn9vZnZp7kYnosmCy31+UR180oH1a4QWWyiODJxJhqajaPTpn80oee5OM130WSlVL3pZ11hJO0daiLWITUJ12KiaM+Spn9ssamVKhyMz0GTVNsDrOi6/o5fiVKLdmVis2qFLkXl27OV/rhCh1mdDj9AB01qmoftnz+Z2ir5+Cjk08JP49RfPElxHNvdpZvao2vhyVE9/AAdNHmkOfZ8ihpK2l4m4y4fJ7ryKp2M8248oe1D7vrHDc3Z++EHOHwTmojlr9tRISciHB/beZ3v87puj+OdmMiV+fUE6WI6Hr5J6amnaFEuzptK6av8GAfrKmzDah3Ex/zR798Iik1e5tGT8srBRzh8k7lSLf1ID9NlWNF5yHLcBuugLd6KNl0H87E9N0m7p+Zgj66tUvPBRzh8k2cl/fNZRzLbxut2kczXaWFXIEdFsG6TfH6KH2fnPSb3pXoefITDN3lVanpZBTDhytd12o6kNWrTg/ZPu8vKYzRV6nXwEQ7fRErvkiSLIpNWeViovokqdnmVmii6LBJE3u8D8mCcNEmqYzhbnqT2/TiOvX37Js/e6q1Hv4l9LX8+H8IyT++mCbaTK1fHkzccTz7OO8Hveafp550mWM/vct6Zn085cH7ywe3z2JTOY9O7PY/F+50b9vS++PyiP3tfPLm398WiHv15/aTs109Wd7N+gnW2G4p/uR6b3c96rMiv1u2bT9btgztat+8/3zmY989xbn6+I+7t8x18DngLPi++YYrrChhcf3IDrlO6IdqOpCpSXM/2D/11j234yXWPwy+bXOD6WO5rXkc9vdvrqAWut78N/5dx08f/3zF/fvr/7is0+WrQhEMTDk04NOHQhHv4DtcevsE1NOHQhEMTDk04NOHQhEMTDk04NOHQhEMTDk04NOHQhEMTDk04NOHQhEMTDk04NOHQhEMTDk04NOHQhEMTDk04NOHQhEMTDk04NOHQhEMTDk04NOHQhEMTDk04NOHQhEMTDk04NOHQhEMTDk04NOHQhEMTDk04NOHQhEMTDk04NOHQhEMT7m/cNifkUwM0UQAAAABJRU5ErkJggg==" height="13px"> India <small><i class="fa fa-chevron-down"></i></small></a>
+					<a class="lang-btn" href="#"> <i class="fa fa-globe"></i> English <small><i class="fa fa-chevron-down"></i></small></a>
+				</div>
+			</div>
+			<div class="footer-last-links">
+				<ul>
+					<li><h4 class="footer-list-title">ABOUT ZOMATO</h4></li>
+					<li><a href="#">Who We Are</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Woek With Us</a></li>
+					<li><a href="#">Investor Relations</a></li>
+					<li><a href="#">Report Fraud</a></li>
+					<li><a href="#">Contact Us</a></li>
+				</ul>
+				<ul>
+					<li><h4 class="footer-list-title">zOMAVERSE</h4></li>
+					<li><a href="#">Zomato</a></li>
+					<li><a href="#">Blinkit</a></li>
+					<li><a href="#">Feeding India</a></li>
+					<li><a href="#">Hyperpure</a></li>
+					<li><a href="#">Zomaland</a></li>
+				</ul>
+				<ul>
+					<li><h4 class="footer-list-title">FOR RESTAURANTS</h4></li>
+					<li><a href="#">Add Restaurant</a></li>
+					<li><a href="#">Partner With Us</a></li>
+					<li><a href="#">Apps For You</a></li>
+					<li><a href="#">Zomato For Work</a></li>
+					<li><a href="#">Product Businesses</a></li>
+				</ul>
+				<ul>
+					<li><h4 class="footer-list-title">LEARN MORE</h4></li>
+					<li><a href="#">Privacy</a></li>
+					<li><a href="#">Security</a></li>
+					<li><a href="#">Terms</a></li>
+					<li><a href="#">Sitemap</a></li>
+				</ul>
+				<div>
+					<h4 class="footer-list-title">SOCIAL LINKS</h4>
+					<div class="footer-social-icons">
+						<a href="#"><i class="fab fa-linkedin"></i></a>
+						<a href="#"><i class="fab fa-instagram"></i></a>
+						<a href="#"><i class="fab fa-twitter"></i></a>
+						<a href="#"><i class="fab fa-youtube"></i></a>
+						<a href="#"><i class="fab fa-facebook"></i></a>
+					</div>
+					<div>
+						<img src="https://b.zmtcdn.com/data/webuikit/9f0c85a5e33adb783fa0aef667075f9e1556003622.png" width="137px">
+						<img src="https://b.zmtcdn.com/data/webuikit/23e930757c3df49840c482a8638bf5c31556001144.png" width="137px">
+					</div>
+				</div>
+			</div>
+			<div class="footer-copyright">
+				<p><small>By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008-2022 © Zomato™ Ltd. All rights reserved.</small></p>
+			</div>
+		</div><!--By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008-2022 © Zomato™ Ltd. All rights reserved.-->
+		
+	</section>
+	<!-- section-6 ends  Footer -->
+
+
+
+      
+    
+    
+
+    
+</div>
+
+
+
+
+
+
+<div id="mini-page">
+    <nav  id="navbar2"><!---mini navbar and mini page-->
+        <div class="container-fluid">
+           <span onclick="Close()"><h2 style="cursor: pointer;"> &#10006;</h2></span>
+           <img src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png" tabindex="0" class="sc-yvzia9-6 sc-yvzia9-7 fvCyAU" height=30px id="img-logo"/><!--logo--->
+       </div>
+     </nav>
+
+     <ul>
+        <li id="mini-login"> Login</li>
+        <li id="mini-singup">Sing up</li>
+       
+     </ul>
+
+</div>
+
+
+
+<!--login-page-->
+    
+<div id="blur">
+
+	<div id="id1">
+		<div id="id2"><h1>Login</h1></div>
+		<div id="id3"><a href="#" onclick="wrong()"><i class="fa-sharp fa-solid fa-xmark"></i></a></div>
+		<div id="login-page">
+		   <div id="id4">
+				<select id="country" onchange="country_code()">
+				   <option value="+91">+91</option>
+				   <option value="+71">+71</option>
+				   <option value="+81">+23</option>
+				   <option value="+97">+1</option>
+				</select> 
+				<label id="line">|</label>
+				<input type="tel" placeholder="Phone" class="phone_no"/>
+			</div>
+			<div>
+			   <button id="btn1">Send One Time Password</button>
+			</div>
+			<div id="id5">
+				<h3 id="hr">or</h3>
+			</div>
+			<button id="btn-2" onclick="emailbox()"><a href="#"><span class="text"><i class="fa-solid fa-envelope"></i></span> Continue With Email</a></button>
+			<button id="btn-3">
+				<span><a href="www.google.com" class="text">
+					<img src="https://th.bing.com/th/id/OIP.0dFPYsFCCbtGwu7g96sC4gHaHa?w=194&h=194&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt=""> 
+					Continue With Google 
+				</a></span>
+			</button>
+			<div id="id6">
+			<label>New to Zomato ? </label><span><a href="#" style="color:rgb(239, 79, 95)">Create Account</a></span>
+		   </div>   
+		</div>
+
+		<!--email-page-->
+
+		<div id="email-page">
+			<div class="mail_pic">
+			   <img src="https://b.zmtcdn.com/Zwebmolecules/73b3ee9d469601551f2a0952581510831595917292.png" alt="">
+			</div>
+			<div class="mail_input">
+			   <input type="email" name="Email" placeholder="Email" autocomplete="on">
+			</div>
+			<div class="otp_btn">
+			   <button class="otp">Send One Time Password</button>
+			</div>
+			<div class="already">
+			   <p style="color:rgb(77, 77, 77)">Already have an account?<span style="color:rgb(239,79,95)">Login</span></p>
+			</div>
+
+
+		</div>
+
+		 <!--email-page-ends-->
+
+
+
+		 <!--signup-page-->
+
+		 <div id="sing-page"><!--container-->
+			<div id="id-head"><h1>Sign up</h1></div><!--id2-->
+			<div id="id-x" onclick="wrong()"><a href="#"><i class="fa-sharp fa-solid fa-xmark" style="color:black ;"></i></a></div><!--id3-->
+			<input id="id-name" type="text" placeholder="Full Name"><!--id4-->
+			<input id="id-mail" type="email" placeholder="Email"><!--id5-->
+			<div class="check">
+				<input id="id-check" type="checkbox"><!--id7-->
+				<p>I agree to Zomato's <span style="color: rgb(239,79,95);">Terms of Service, Privacy Policy</span> and <span style="color: rgb(239,79,95);">Content Policies</span></p>
+			</div>
+			<button id="id-account">Create account</button><!--id10-->
+			<div id="id-or"><!--id-11-->
+				<h3 id="hr-2">or</h3><!--hr-->
+			</div>
+			<button id="btn-4"><!--btn-3-->
+				<a href="www.google.com" class="text2">
+					<img src="https://th.bing.com/th/id/OIP.0dFPYsFCCbtGwu7g96sC4gHaHa?w=194&h=194&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt=""> 
+					<span>Continue With Google </span></a></button>
+			   <p style="margin:25px 25px">All ready have an account?<a href="#" style="text-decoration: none;color: rgb(239,79,95);">Login</a></p>
+		</div>    
+
+
+
+		 <!---signup-page-ends-->
+
+</div>
+
+<!---login-page-ends-->
+
+
+
+
+</body>
+</html>

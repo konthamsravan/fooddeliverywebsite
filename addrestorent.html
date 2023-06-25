@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Add a restaurant - Zomato</title>
+	<!-- icon -->
+	<link rel="icon" href="https://data1.ibtimes.co.in/cache-img-0-450/en/full/657536/1539438235_zomato.png">
+	<!--font awesome-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+		integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<!--css file-->
+	<link rel="stylesheet" href="addrestorent.css">
+    <script src="addrestorent.js"></script> 
+</head>
+<body onresize="click()">
+    <div id="main-block">
+        <!-- header section starts -->
+		<header>
+            <div class="add_bg_img">
+				<!-- haeder background image-->
+				<img src="https://b.zmtcdn.com/mx-onboarding-hero87f77501659a5656cad54d98e72bf0d81627911821.webp"
+					alt="">
+			</div>
+			<nav class="add_restaurant_nav">
+				<!--zomato for business pic -->
+				<div class="add_head">
+					<img src="https://b.zmtcdn.com/web/merchant/advertize/3d432595dac7d2bda0b4cc41f6afe6ef1564646824.png"
+						alt="">
+				</div>
+				<div class="add_head_1">
+					<img
+						src="https://b.zmtcdn.com/web/merchant/advertize/96ee7b3e8bda71f087622e179e9485741564646925.png" />
+				</div>
+				<div class="add_menu">
+					<a href="#" class="add_menu_1">
+						<div class="explore-title-2 products">
+							<span>Products</span>
+							<span id="product-up" onclick="productup()">
+								<i class="fa-solid fa-caret-up"></i>
+							</span>
+							<span id="product-down" onclick="productdown()">
+								<i class="fa-solid fa-caret-down"></i>
+							</span>
+						</div>
+
+					</a>
+					<div class="add_menu_side">
+						<a href="#" class="add_menu_2">Login</a>
+						<a href="#" class="add_menu_3">Create Account</a>
+					</div>
+				</div>
+			</nav>
+			<div class=" pro" id="prod">
+				<div>
+					<a href="#" id="pro1">Pro</a>
+				</div>
+				<div>
+					<a href="#" id="pro2">Advertise</a>
+				</div>
+			</div>
+			<div id="mini-nav" onclick="toggle()">
+				<h4 style="font-size:xx-large;margin-left: 10px;cursor: pointer; color: rgb(0, 0, 0);">&#x2630;
+				</h4>
+			</div>
+            <div class="add_restaurant_heading">
+				<div class="heading_1">
+					<h1>Register your restaurant on Zomato</h1>
+					<h3>and get more customers!</h3>
+				</div>
+				<div class="heading_2">
+					<div><a href="#" class="register_1"><span>Register your restaurant</span></a></div>
+					<div><a href="#" class="register_2"><span>Restaurant already listed? login now</span></a></div>
+				</div>
+				<div class="header-2">
+					<div class="header_2_heading">
+						<h1>Get started with online ordering</h1>
+						<h3>Please keep the documents ready for a smooth signup</h3>
+					</div>
+					<div class="header_2_main">
+						<div class="header_2_item_1">
+							<span style="color: green;">
+								<i class="fa-solid fa-circle-check"></i>
+							</span>
+							<span>FSSAI license copy</span>
+						</div>
+						<div class="header_2_item_2">
+							<span style="color: green;">
+								<i class="fa-solid fa-circle-check"></i>
+							</span>
+							<span>PAN card copy</span>
+						</div>
+						<div class="header_2_item_1">
+							<span style="color: green;">
+								<i class="fa-solid fa-circle-check"></i>
+							</span>
+							<span>GSTIN (if applicable)</span>
+						</div>
+						<div class="header_2_item_2">
+							<span style="color: green;">
+								<i class="fa-solid fa-circle-check"></i>
+							</span>
+							<span>Bank account details</span>
+						</div>
+						<div class="header_2_item_1">
+							<span style="color: green;">
+								<i class="fa-solid fa-circle-check"></i>
+							</span>
+							<span>Your restaurant menu</span>
+						</div>
+						<div class="header_2_item_2">
+							<span style="color: green;">
+								<i class="fa-solid fa-circle-check"></i>
+							</span>
+							<span>Dish images for top 5 items</span>
+						</div>
+					</div>
+				</div>
+			</div>
+        </header>
+        <!--header section ends-->
+
+        <!-- grey background section starts-->
+		<div class="nothing">
+
+		</div>
+        <!-- grey background section ends-->
+
+		<!-- section-1 starts -->
+		<div class="section-1">
+			<div class="section_1_main">
+				<div class="section_1_top">
+					<h1>Why should you partner with Zomato?</h1>
+					<h3>Zomato enables you to get 60% more revenue, 10x new customers and boost your brand visibility by
+						providing insights to improve your business.</h3>
+				</div>
+				<div class="section_1_bottom">
+					<div class="why_box">
+						<div class="why_img">
+							<img src="https://b.zmtcdn.com/merchant-onboarding/d2bcadb70abdd99811cceda4cc757f5a1600670711.png"
+								alt="">
+						</div>
+						<div class="why_text">
+							<h3>1000+ cities</h3>
+							<h4>in India</h4>
+						</div>
+					</div>
+					<div class="why_box">
+						<div class="why_img">
+							<img src="https://b.zmtcdn.com/merchant-onboarding/77b29f40bd0fb6c74c78695b07cdee901600670728.png"
+								alt="">
+						</div>
+						<div class="why_text">
+							<h3>3 lakh+</h3>
+							<h4>restaurant listings</h4>
+						</div>
+					</div>
+					<div class="why_box">
+						<div class="why_img">
+							<img src="https://b.zmtcdn.com/merchant-onboarding/e2b1283698fb6d3532c2df0c22a11fca1600670743.png"
+								alt="">
+						</div>
+						<div class="why_text">
+							<h3>5.0 crore+</h3>
+							<h4>monthly orders</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- section-1 ends -->
+
+        <!-- section-2 starts-->
+		<div class="section-2">
+			<div class="how_main">
+				<div class="how_bg">
+					<img src="https://b.zmtcdn.com/merchant-onboarding/f57794be6408563354c463c702ab45b91600672364.png"
+						alt="">
+				</div>
+				<div class="how_content">
+					<h1 class="how_content_h1">How it works?</h1>
+					<div class="how_content_box">
+						<div class="how_bottom">
+							<div class="how_bottom_img img1">
+								<img src="https://b.zmtcdn.com/merchant-onboarding/ecb5e086ee64a4b8b063011537be18171600699886.png"
+									alt="">
+							</div>
+							<div class="bottom_text">
+								<h3>Step 1</h3>
+								<h4>Create your page on Zomato</h4>
+								<h5>Help users discover your place by creating a listing on Zomato</h5>
+							</div>
+						</div>
+						<div class="how_bottom">
+							<div class="how_bottom_img img2">
+								<img src="https://b.zmtcdn.com/merchant-onboarding/71d998231fdaeb0bffe8ff5872edcde81600699935.png"
+									alt="">
+							</div>
+							<div class="bottom_text">
+								<h3>Step 2</h3>
+								<h4>Register for online ordering</h4>
+								<h5>And deliver orders to millions of customers with ease</h5>
+							</div>
+						</div>
+						<div class="how_bottom">
+							<div class="how_bottom_img img3">
+								<img src="https://b.zmtcdn.com/merchant-onboarding/efdd6ac0cd160a46c97ad58d9bbd73fd1600699950.png"
+									alt="">
+							</div>
+							<div class="bottom_text">
+								<h3>Step 3</h3>
+								<h4>Start receiving orders online</h4>
+								<h5>Manage orders on our partner app, web dashboard or API partners</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="nothing-1">
+
+		</div>
+		<!-- section-2 ends -->
+
+        <!-- section-3 starts-->
+		<div class="section-3">
+			<div class="already_main">
+				<div class="already_main_heading">
+					<h1>Already have your restaurant listed?</h1>
+				</div>
+				<div class="already_main_subheading">
+					<h2>Search here and claim the ownership of your restaurant</h2>
+				</div>
+				<div class="already_main_search">
+					<div class="already_search_1">
+						<i class="fa-solid fa-location-dot"></i>
+						<input type="search" placeholder="Delhi NCR">
+						<i class="fa-solid fa-caret-down"></i>
+					</div>
+					<div class="already_search_2">
+						<div class="input1">
+							<span>|</span>
+							<input type="search" placeholder="Serach for your restaurant, eg. Greenland Cafe">
+							<i class="fa-solid fa-caret-down"></i>
+						</div>
+						<div class="input2">
+							<span>|</span>
+							<input type="search" placeholder="Serach your outlet">
+							<i class="fa-solid fa-caret-down"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- section-3 ends-->
+
+       <!--section-4 starts-->
+		<div class="section-4">
+			<div class="our_products_main">
+				<div class="our_products_heading">
+					<h1>Our products</h1>
+				</div>
+
+                <div class="slider1">
+                    <div onclick="slideleft()" class="chevronl">
+                        <i class="fa-solid fa-chevron-left "></i>
+                    </div>
+                    <div class="our_products_content">
+                        <div class="card1_3">
+                            <div class="card1">
+                                <img
+                                    src="https://b.zmtcdn.com/merchant-onboarding/be4f70ca22a3b31a84b3cf8ed811f0281600769259.png">
+                                <h3>Listings</h3>
+                                <p>A free app that allows you to manage your Zomato listing directly from your smartphone</p>
+                                <h4>Learn more
+                                    <i class="fa-solid fa-caret-right"></i>
+                                </h4>
+                            </div>
+    
+                            <div class="card2">
+                                <img
+                                    src="https://b.zmtcdn.com/merchant-onboarding/2c7dd621a502cde6f5051fc6d411b8881600769171.png">
+                                <h3>Online Ordering</h3>
+                                <p>Start taking orders online from millions of users near you and deliver with Zomato...</p>
+                                <h4>Learn more
+                                    <i class="fa-solid fa-caret-right"></i>
+                                </h4>
+                            </div>
+    
+                            <div class="card3">
+                                <img
+                                    src="https://b.zmtcdn.com/merchant-onboarding/01a4db6bca19cd7f2013f05f159b6b491600769328.png">
+                                <h3>Pro</h3>
+                                <p>Drive more users to dine-in at your place by partnering with Zomato’s loyalty program</p>
+                                <h4>Learn more
+                                    <i class="fa-solid fa-caret-right"></i>
+                                </h4>
+                            </div>
+    
+                        </div>
+                        <div class="card4_6">
+                            <div class="card4">
+                                <img src="https://www.zomato.com/partner-with-us/static/media/ZomatoAdvertise.31195a83.svg">
+                                <h3>Advertise</h3>
+                                <p>For every marketing dollar spent, Zomato returns over 8x the investment...</p>
+                                <h4>Learn more
+                                    <i class="fa-solid fa-caret-right"></i>
+                                </h4>
+                            </div>
+                            <div class="card5">
+                                <img src="https://www.zomato.com/partner-with-us/static/media/ZomatoEvent.c3e1f3a8.svg">
+                                <h3>Events</h3>
+                                <p>Partner with us for India’s grandest food & entertainment carnival - “Zomaland”...</p>
+                                <h4>Learn more
+                                    <i class="fa-solid fa-caret-right"></i>
+                                </h4>
+                            </div>
+                            <div class="card6">
+                                <img src="https://www.zomato.com/partner-with-us/static/media/Hyperpure.25f37214.svg">
+                                <h3>Hyperpure</h3>
+                                <p>Supplies fresh and high quality ingredients to restaurant for serving delicious meals...</p>
+                                <h4>Learn more
+                                    <i class="fa-solid fa-caret-right"></i>
+                                </h4>
+                            </div>
+    
+                        </div>
+    
+                    </div>
+                    <div onclick="slideright()" class="chevronr">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                </div>
+
+			</div>
+		</div>
+		<!--section-4 ends-->
+
+        <!--section-5 starts-->
+    <div class="section-5">
+        <div class="our_happy_main">
+            <div class="our_happy_heading">
+                <h1>Our happy partners</h1>
+            </div>
+            <div class="happy_slide">
+                <div onclick="slidel()" class="happyl">
+                    <i class="fa-solid fa-chevron-left " ></i>
+                </div>
+    
+                <div class="our_happy_content">
+    
+                    <div class="our_happy_1">
+                        <div class="our_happy_img">
+                            <img src="https://b.zmtcdn.com/merchant-onboarding/9baa012d14c167b0a313d46cefb667051600688642.png" alt="">
+                            <img class="happy_img_1"  src="https://www.zomato.com/partner-with-us/static/media/PawanKumar.fb110f23.png" alt="">
+                        </div>
+                        <div class="our_happy_desc">
+                            <p class="happy_p_1">We are immensely satisfied with the marketing push Zomato has provided us. We are now exclusive with Zomato and look forward to more growth in our delivery business through online orders.</p>
+                            <p class="happy_p_2">Pawan Kumar</p>
+                            <p class="happy_p_3">Owner - Chicago BR, Dehradun</p>
+                        </div>
+                    </div>
+    
+                    <div class="our_happy_1">
+                        <div class="our_happy_img">
+                            <img src="https://b.zmtcdn.com/merchant-onboarding/9baa012d14c167b0a313d46cefb667051600688642.png" alt="">
+                            <img class="happy_img_2" src="https://www.zomato.com/partner-with-us/static/media/Tushar.6bc47b8a.png" alt="">
+                        </div>
+                        <div class="our_happy_desc">
+                            <p class="happy_p_1">Zomato delivery fleet saves considerable effort on our part resulting in more fulfilled orders for us. Also, it has now become much easier for customers to discover our brand on Zomato.</p>
+                            <p class="happy_p_2">Tushar</p>
+                            <p class="happy_p_3">Owner - Concept Shawarma , Delhi NCR</p>
+                        </div>
+                    </div>
+    
+                    <div class="our_happy_1">
+                        <div class="our_happy_img">
+                            <img src="https://b.zmtcdn.com/merchant-onboarding/9baa012d14c167b0a313d46cefb667051600688642.png" alt="">
+                            <img class="happy_img_3" src="https://www.zomato.com/partner-with-us/static/media/Jasmeet.7da6a5e1.png" alt="">
+                        </div>
+                        <div class="our_happy_desc">
+                            <p class="happy_p_1">Earlier, we delivered food orders to our known and repeat customers but now we have been able to create a completely new segment of repeat users - all because of the Zomato app.</p>
+                            <p class="happy_p_2">Jasmeet Singh</p>
+                            <p class="happy_p_3">Owner - Pick and Move, Udaipur</p>
+                        </div>
+                    </div>
+    
+                </div>
+                <div onclick="slider()" class="happyr">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--section-5 ends-->
+
+    <!--section-6 starts-->
+    <div class="section-6">
+        <div class="what_main">
+            <div class="what_heading">
+                <h1>What do you get on sign-up</h1>
+                <h3>Zomato Partner Platform helps you take your business to new heights instantly with no hassle and 100% transparency!</h3>
+            </div>
+            <div class="what_content">
+                <div class="what_content_left">
+                    <div class="what_text">
+                        <div class="what_p_1">1</div>
+                        <div class="what_matter">
+                            <h2>Restaurant Partner app</h2>
+                            <h3>Manage all your orders on your smartphone with our Android app</h3>
+                        </div>
+                    </div>
+                    <div class="what_text">
+                        <div class="what_p_2">2</div>
+                        <div class="what_matter">
+                            <h2>Restaurant Partner web dashboard</h2>
+                            <h3>Manage all your orders on your desktop or laptop</h3>
+                        </div>
+                    </div>
+                    <div class="what_text">
+                        <div class="what_p_3">3</div>
+                        <div class="what_matter">
+                            <h2>API integration</h2>
+                            <h3>Manage all your orders on your existing Point of Sale (POS) or third party software</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="what_content_right">
+                    <img src="https://b.zmtcdn.com/merchant-onboarding/a603975bb4aea5941c7c45bb3480be1c1600934866.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--section-6 ends-->
+
+    <!--section-7 starts-->
+
+    <div class="section-7">
+        <div class="journey_main">
+            <div class="journey_pic">
+                <img src="https://www.zomato.com/partner-with-us/static/media/StartJourney.7cfaaf0a.jpg" alt="">
+            </div>
+            <div class="journey_content">
+                <h1>Start your journey with Zomato</h1>
+                <h4>Create your restaurant page and register for online ordering</h4>
+                <a href="">Start now
+                    <i class="fa-solid fa-caret-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!--section-7 ends-->
+
+    <!--section-8 starts-->
+
+		<div class="section-8">
+			<div class="explore-title">
+				<h1>Frequently asked questions</h1>
+			</div>
+			<div class="explore_part_1">
+				<div class="explore-title-2">
+					<h2>What will Zomato charge me for creating a page on its platform?</h2>
+					<span id="down-arrow" onclick="downarrow()">
+						<i class="fa-solid fa-chevron-up"></i>
+					</span>
+					<span id="up-arrow" onclick="uparrow()">
+						<i class="fa-solid fa-chevron-down"></i>
+					</span>
+				</div>
+				<div class="wrap-links food-1" id="food1">
+					<p>Creating a restaurant page on Zomato is free of cost. You can maintain your page by replying to
+						reviews and do a lot more without any charges.</p>
+				</div>
+			</div>
+			<div class="explore_part_1">
+				<div class="explore-title-2">
+					<h2>What all documents are required for registering on online ordering?</h2>
+					<span id="down-arrow1" onclick="downarrow1()">
+						<i class="fa-solid fa-chevron-up"></i>
+					</span>
+					<span id="up-arrow1" onclick="uparrow1()">
+						<i class="fa-solid fa-chevron-down"></i>
+					</span>
+				</div>
+				<div class="wrap-links food-2" id="food2">
+					<h4>Registration for online ordering requires:</h4>
+					<p>a: FSSAI certificate (application no. if FSSAI is not present)</p>
+					<p>b: PAN Card</p>
+					<p>c: GST certificate (if applicable)</p>
+				</div>
+			</div>
+			<div class="explore_part_1">
+				<div class="explore-title-2">
+					<h2>I have a large fleet of delivery boys, why should I use Zomato’s delivery service?</h2>
+					<span id="down-arrow2" onclick="downarrow2()">
+						<i class="fa-solid fa-chevron-up"></i>
+					</span>
+					<span id="up-arrow2" onclick="uparrow2()">
+						<i class="fa-solid fa-chevron-down"></i>
+					</span>
+				</div>
+				<div class="restraunt-chains food-3" id="food3">
+					<p>You can use your and Zomato's delivery fleet simultaneously to increase the network of your
+						delivery radius. Also, our delivery fleet delivers orders in minimum possible time, a key factor
+						leading to increased customer satisfaction.</p>
+				</div>
+			</div>
+			<div class="explore_part_1">
+				<div class="explore-title-2">
+					<h2>What happens if the average order value of Zomato orders is very low</h2>
+					<span id="down-arrow3" onclick="downarrow3()">
+						<i class="fa-solid fa-chevron-up"></i>
+					</span>
+					<span id="up-arrow3" onclick="uparrow3()">
+						<i class="fa-solid fa-chevron-down"></i>
+					</span>
+				</div>
+				<div class="last-links food-4" id="food4">
+					<p>Average order value from our platform is generally more than Rs 250. However, in some cases,
+						users want to try out your place by ordering for lesser amount. But we have observed that they
+						eventually come back with higher value orders if they like your food.</p>
+				</div>
+			</div>
+		</div>
+
+		<!--section-8 ends-->
+
+        <!-- section-9 starts -->
+
+		<div class="section-9">
+			<div class="cannot_main">
+				<div class="cannot_content_1">
+					<h1>Cannot find your favourite restaurant on Zomato?</h1>
+					<p>Submit the details and our team will get the restaurant onboard</p>
+				</div>
+				<div class="cannot_content_2">
+					<div class="cannot1">
+						<input type="text">
+						<label>Restaurant name*</label>
+					</div>
+					<div class="cannot1">
+						<input type="text">
+						<label>Restaurant location*</label>
+					</div>
+					<div class="cannot1">
+						<input type="text">
+						<label>Restaurant contact number</label>
+					</div>
+					<div class="cannot1">
+						<input type="text">
+						<label>What do you like about the restaurant?</label>
+					</div>
+					<div class="submit_btn">
+						<input type="submit" value="Submit">
+					</div>
+					<p>Restaurant owners can <span style="color:rgb(39, 129, 231);">add restaurant from here</span></p>
+				</div>
+			</div>
+		</div>
+
+		<!-- section-9 ends -->
+
+		<!-- section-10 starts  Footer -->
+		<section class="footer-bar">
+			<div class="container">
+				<div class="footer-lang">
+					<img class="footer-logo" src="images/zomato-black-logo.webp">
+					<div class="btn-lang-top">
+						<a class="lang-btn" href="#"><img src="images/india-flag.jpg" height="13px"> India <small><i
+									class="fa fa-chevron-down"></i></small></a>
+						<a class="lang-btn" href="#"> <i class="fa fa-globe"></i> English <small><i
+									class="fa fa-chevron-down"></i></small></a>
+					</div>
+				</div>
+				<div class="footer-last-links">
+					<ul>
+						<h4 class="footer-list-title">ABOUT ZOMATO</h4>
+						<a href="#" id="anchor">Who We Are</a>
+						<a href="#" id="anchor">Blog</a>
+						<a href="#" id="anchor">Woek With Us</a>
+						<a href="#" id="anchor">Investor Relations</a>
+						<a href="#" id="anchor">Report Fraud</a>
+						<a href="#" id="anchor">Contact Us</a>
+					</ul>
+					<ul>
+						<h4 class="footer-list-title">ZOMAVERSE</h4>
+						<a href="#" id="anchor">Zomato</a>
+						<a href="#" id="anchor">Blinkit</a>
+						<a href="#" id="anchor">Feeding India</a>
+						<a href="#" id="anchor">Hyperpure</a>
+						<a href="#" id="anchor">Zomaland</a>
+					</ul>
+					<ul>
+						<h4 class="footer-list-title">FOR RESTAURANTS</h4>
+						<a href="#" id="anchor">Add Restaurant</a>
+						<a href="#" id="anchor">Partner With Us</a>
+						<a href="#" id="anchor">Apps For You</a>
+						<a href="#" id="anchor">Zomato For Work</a>
+						<a href="#" id="anchor">Product Businesses</a>
+					</ul>
+					<ul>
+						<h4 class="footer-list-title">LEARN MORE</h4>
+						<a href="#" id="anchor">Privacy</a>
+						<a href="#" id="anchor">Security</a>
+						<a href="#" id="anchor">Terms</a>
+						<a href="#" id="anchor">Sitemap</a>
+					</ul>
+					<div>
+						<h4 class="footer-list-title">SOCIAL LINKS</h4>
+						<div class="footer-social-icons">
+							<a href="#"><i class="fab fa-linkedin"></i></a>
+							<a href="#"><i class="fab fa-instagram"></i></a>
+							<a href="#"><i class="fab fa-twitter"></i></a>
+							<a href="#"><i class="fab fa-youtube"></i></a>
+							<a href="#"><i class="fab fa-facebook"></i></a>
+						</div>
+						<img src="images/app-store1.webp" width="137px">
+						<img src="images/app-store2.webp" width="137px">
+					</div>
+				</div>
+				<div class="footer-copyright">
+					<p><small>By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy
+							Policy and Content Policies. All trademarks are properties of their respective owners.
+							2008-2022 © Zomato™ Ltd. All rights reserved.</small></p>
+				</div>
+			</div>
+		</section>
+		<!-- section-10 ends  Footer -->
+
+    </div> 
+    <!-- mini navbar and mini page -->
+	<div id="mini-page">
+		<nav id="navbar2">
+			<div class="container-fluid">
+				<span onclick="Close()">
+					<h2 style="cursor: pointer; margin-top:10px; margin-left:5px;">&#10006;</h2>
+				</span>
+				<img src="https://b.zmtcdn.com/web/merchant/advertize/96ee7b3e8bda71f087622e179e9485741564646925.png"
+					tabindex="0" class="sc-yvzia9-6 sc-yvzia9-7 fvCyAU" id="img-logo" />
+			</div>
+		</nav>
+
+		<ul>
+			<li class="mini-restaurant">
+				<div class="mini-product">
+					<h2>Products</h2>
+					<i class="fa-solid fa-chevron-down"></i>
+				</div>
+			</li>
+			<li class="mini-restaurant"><a href="#">
+					<span>Login</span>
+					<i class="fa-solid fa-chevron-right"></i>
+				</a>
+			</li>
+			<li class="mini-restaurant"><a href="#">
+					<span>Create account</span>
+					<i class="fa-solid fa-chevron-right"></i>
+				</a>
+			</li>
+		</ul>
+
+	</div>
+      
+</body>
+</html>
